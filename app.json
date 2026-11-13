@@ -1,0 +1,33 @@
+{
+  "expo": {
+    "name": "SunPulse",
+    "slug": "sunpulse-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "backgroundColor": "#FFFFFF",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "ng.com.sunpulse.app",
+      "infoPlist": {
+        "NSCameraUsageDescription": "SunPulse needs camera access to scan inverter datalogger barcodes and capture site installation photos.",
+        "NSPhotoLibraryUsageDescription": "SunPulse needs photo library access to upload equipment documentation and site photos.",
+        "NSFaceIDUsageDescription": "SunPulse uses Face ID for fast and secure account authentication."
+      }
+    },
+    "android": {
+      "package": "ng.com.sunpulse.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#FFFFFF",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
