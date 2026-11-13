@@ -11,6 +11,7 @@ import { PasswordUpdatedScreen } from './src/screens/PasswordUpdatedScreen';
 import { ClientHomeScreen } from './src/screens/ClientHomeScreen';
 import { ClientHomeOfflineScreen } from './src/screens/ClientHomeOfflineScreen';
 import { SystemPassportScreen } from './src/screens/SystemPassportScreen';
+import { ConnectInverterScreen, InverterConnectionData } from './src/screens/ConnectInverterScreen';
 import { ClientProjectScreen } from './src/screens/ClientProjectScreen';
 import { ClientSupportScreen } from './src/screens/ClientSupportScreen';
 import { ReportFaultScreen } from './src/screens/ReportFaultScreen';
@@ -81,6 +82,7 @@ import { TicketCategory } from './src/types/database';
 export type ScreenState =
   | 'splash'
   | 'login'
+  | 'connect_inverter'
   | 'forgot_password'
   | 'check_email'
   | 'set_new_password'
@@ -147,6 +149,14 @@ export default function App() {
   const [currentScreen, setCurrentScreen] = useState<ScreenState>('splash');
   const [resetEmail, setResetEmail] = useState<string>('name@example.com');
   const [selectedSite, setSelectedSite] = useState<string>('Main Residence');
+  const [connectedInverter, setConnectedInverter] = useState<InverterConnectionData | null>({
+    brand: 'Deye Cloud',
+    serialNumber: 'DEYE-DEMO-2026-LIVE',
+    capacityKva: '5.0',
+    batteryKwh: '10.0',
+    siteName: 'Primary Healthcare Clinic · Kura',
+    isDemo: true,
+  });
   const [isSiteSwitcherOpen, setIsSiteSwitcherOpen] = useState(false);
   const [isNotificationsOpen, setIsNotificationsOpen] = useState(false);
   const [isEngineerNotificationsOpen, setIsEngineerNotificationsOpen] = useState(false);
@@ -287,6 +297,17 @@ export default function App() {
         />
       )}
 
+      {currentScreen === 'connect_inverter' && (
+        <ConnectInverterScreen
+          onBack={() => setCurrentScreen('client_home')}
+          onConnected={(data) => {
+            setConnectedInverter(data);
+            setSelectedSite(data.siteName || 'Solar Facility');
+            setCurrentScreen('client_home');
+          }}
+        />
+      )}
+
       {currentScreen === 'forgot_password' && (
         <ForgotPasswordScreen
           onBackToSignIn={() => setCurrentScreen('login')}
@@ -335,6 +356,8 @@ export default function App() {
       {currentScreen === 'client_home' && (
         <ClientHomeScreen
           siteName={selectedSite}
+          connectedInverter={connectedInverter}
+          onConnectInverter={() => setCurrentScreen('connect_inverter')}
           onLogout={() => setIsSignOutModalOpen(true)}
           onSwitchToPassport={() => setCurrentScreen('system_passport')}
           onSwitchTab={handleTabSwitch}
@@ -435,6 +458,7 @@ export default function App() {
           onOpenNotifications={() => setIsNotificationsOpen(true)}
           onOpenNotificationSettings={() => setCurrentScreen('notification_settings')}
           onOpenSiteSwitcher={() => setIsSiteSwitcherOpen(true)}
+          onOpenConnectInverter={() => setCurrentScreen('connect_inverter')}
           onOpenEngineerPortal={() => setCurrentScreen('engineer_jobs')}
           onEditProfile={() => {
             setLastMoreScreen('client_more');

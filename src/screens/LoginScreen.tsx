@@ -220,7 +220,7 @@ export const LoginScreen: React.FC<LoginScreenProps> = ({
                     onPress={handleSignIn}
                   >
                     <LinearGradient
-                      colors={['#dc2626', '#b91c1c']}
+                      colors={['#EA580C', '#D97706']}
                       start={{ x: 0, y: 0 }}
                       end={{ x: 0, y: 1 }}
                       style={styles.signInGradient}
@@ -247,6 +247,7 @@ export const LoginScreen: React.FC<LoginScreenProps> = ({
                     activeOpacity={0.8}
                     style={styles.biometricButton}
                     accessibilityLabel="Sign in with Face ID or Touch ID"
+                    onPress={() => onLoginSuccess?.('user@sunpulse.ng')}
                   >
                     <Svg
                       width={24}
@@ -267,32 +268,18 @@ export const LoginScreen: React.FC<LoginScreenProps> = ({
                   </TouchableOpacity>
                 </View>
 
-                {/* Quick Demo Role Logins */}
+                {/* Instant Evaluation Demo Access */}
                 <View style={styles.demoRolesContainer}>
-                  <Text style={styles.demoRolesLabel}>Quick demo access:</Text>
-                  <View style={styles.demoRolesRow}>
-                    <TouchableOpacity
-                      style={styles.demoRoleChip}
-                      activeOpacity={0.8}
-                      onPress={() => onLoginSuccess?.('client@sunpulse.ng')}
-                    >
-                      <Text style={styles.demoRoleChipText}>Client</Text>
-                    </TouchableOpacity>
-                    <TouchableOpacity
-                      style={styles.demoRoleChip}
-                      activeOpacity={0.8}
-                      onPress={() => onLoginSuccess?.('engineer@sunpulse.ng')}
-                    >
-                      <Text style={styles.demoRoleChipText}>Engineer</Text>
-                    </TouchableOpacity>
-                    <TouchableOpacity
-                      style={styles.demoRoleChip}
-                      activeOpacity={0.8}
-                      onPress={() => onLoginSuccess?.('management@sunpulse.ng')}
-                    >
-                      <Text style={styles.demoRoleChipText}>Management</Text>
-                    </TouchableOpacity>
-                  </View>
+                  <Text style={styles.demoRolesLabel}>Quick evaluation access:</Text>
+                  <TouchableOpacity
+                    style={styles.demoLoginButton}
+                    activeOpacity={0.85}
+                    onPress={() => onLoginSuccess?.('demo@sunpulse.ng')}
+                  >
+                    <View style={styles.demoLoginBox}>
+                      <Text style={styles.demoLoginText}>⚡ Launch Live Solar Telemetry (Demo)</Text>
+                    </View>
+                  </TouchableOpacity>
                 </View>
               </View>
 
@@ -300,7 +287,7 @@ export const LoginScreen: React.FC<LoginScreenProps> = ({
               <View style={styles.dividerContainer}>
                 <View style={styles.dividerLine} />
                 <View style={styles.dividerBadge}>
-                  <Text style={styles.dividerText}>No account?</Text>
+                  <Text style={styles.dividerText}>No solar system yet?</Text>
                 </View>
               </View>
 
@@ -316,7 +303,7 @@ export const LoginScreen: React.FC<LoginScreenProps> = ({
                     height={16}
                     viewBox="0 0 24 24"
                     fill="none"
-                    stroke="#dc2626"
+                    stroke="#EA580C"
                     strokeWidth={2}
                   >
                     <Rect x={4} y={2} width={16} height={20} rx={2} />
@@ -325,7 +312,7 @@ export const LoginScreen: React.FC<LoginScreenProps> = ({
                     <Path d="M8 10h.01M12 10h.01M16 10h.01M8 14h.01M12 14h.01M8 18h.01M12 18h.01" />
                   </Svg>
                 </View>
-                <Text style={styles.roiText}>Calculate Solar ROI</Text>
+                <Text style={styles.roiText}>Calculate Solar Sizing & ROI</Text>
               </TouchableOpacity>
             </View>
 
@@ -347,8 +334,7 @@ export const LoginScreen: React.FC<LoginScreenProps> = ({
                   </Svg>
                 </View>
                 <Text style={styles.footerText}>
-                  Client accounts are managed directly by SUNPULSE.{' '}
-                  <Text style={styles.footerLink}>Contact project manager</Text> for access.
+                  SunPulse Clean Energy Telemetry · Connect your inverter in seconds with zero downtime.
                 </Text>
               </View>
             </View>
@@ -552,6 +538,7 @@ const styles = StyleSheet.create({
   },
   demoRolesContainer: {
     marginTop: 14,
+    width: '100%',
     alignItems: 'center',
     gap: 6,
   },
@@ -562,22 +549,24 @@ const styles = StyleSheet.create({
     textTransform: 'uppercase',
     color: '#94a3b8',
   },
-  demoRolesRow: {
-    flexDirection: 'row',
-    gap: 8,
+  demoLoginButton: {
+    width: '100%',
+    borderRadius: 10,
+    overflow: 'hidden',
   },
-  demoRoleChip: {
-    paddingVertical: 5,
-    paddingHorizontal: 12,
-    borderRadius: 999,
-    backgroundColor: '#ffffff',
+  demoLoginBox: {
+    backgroundColor: '#FFFBEB',
     borderWidth: 1,
-    borderColor: '#e2e8f0',
+    borderColor: '#FDE68A',
+    paddingVertical: 10,
+    borderRadius: 10,
+    alignItems: 'center',
+    justifyContent: 'center',
   },
-  demoRoleChipText: {
-    fontSize: 12,
-    fontWeight: '600',
-    color: '#475569',
+  demoLoginText: {
+    fontSize: 13,
+    fontWeight: '700',
+    color: '#B45309',
   },
 
   /* Divider */

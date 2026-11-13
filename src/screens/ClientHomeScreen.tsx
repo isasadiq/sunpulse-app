@@ -30,6 +30,8 @@ interface ClientHomeScreenProps {
   onOpenNotifications?: () => void;
   onOpenSiteSwitcher?: () => void;
   onOpenEnergySavings?: () => void;
+  onConnectInverter?: () => void;
+  connectedInverter?: { brand: string; serialNumber: string; siteName: string; capacityKva: string; batteryKwh: string } | null;
   siteName?: string;
   isLoading?: boolean;
 }
@@ -41,6 +43,8 @@ export const ClientHomeScreen: React.FC<ClientHomeScreenProps> = ({
   onOpenNotifications,
   onOpenSiteSwitcher,
   onOpenEnergySavings,
+  onConnectInverter,
+  connectedInverter,
   siteName = 'Main Residence',
   isLoading,
 }) => {
@@ -154,6 +158,25 @@ export const ClientHomeScreen: React.FC<ClientHomeScreenProps> = ({
             {hasUnreadNotification && <View style={styles.notificationDot} />}
           </TouchableOpacity>
         </View>
+
+        {/* Connected Inverter Quick Bar */}
+        <TouchableOpacity
+          style={styles.inverterBar}
+          activeOpacity={0.8}
+          onPress={onConnectInverter}
+        >
+          <View style={styles.inverterBarLeft}>
+            <View style={styles.inverterPulseDot} />
+            <Text style={styles.inverterBarText}>
+              {connectedInverter
+                ? `${connectedInverter.brand} · ${connectedInverter.capacityKva} kVA (${connectedInverter.serialNumber})`
+                : 'Connect Inverter Datalogger · Tap to Pair Hardware'}
+            </Text>
+          </View>
+          <Text style={styles.inverterBarAction}>
+            {connectedInverter ? 'Manage' : 'Connect ⚡'}
+          </Text>
+        </TouchableOpacity>
 
         {/* Hero Card: Solar Generation */}
         <TouchableOpacity
@@ -409,6 +432,43 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
+  },
+  inverterBar: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    backgroundColor: '#FFF7ED',
+    borderWidth: 1,
+    borderColor: '#FED7AA',
+    borderRadius: 10,
+    paddingHorizontal: 12,
+    paddingVertical: 9,
+    marginTop: 12,
+  },
+  inverterBarLeft: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 8,
+    flex: 1,
+  },
+  inverterPulseDot: {
+    width: 8,
+    height: 8,
+    borderRadius: 4,
+    backgroundColor: '#EA580C',
+  },
+  inverterBarText: {
+    fontSize: 12,
+    fontWeight: '600',
+    color: '#9A3412',
+    flex: 1,
+  },
+  inverterBarAction: {
+    fontSize: 11,
+    fontWeight: '700',
+    color: '#C2410C',
+    textTransform: 'uppercase',
+    letterSpacing: 0.5,
   },
   siteButton: {
     height: 44,

@@ -30,6 +30,7 @@ interface ClientMoreScreenProps {
   onOpenNotificationSettings?: () => void;
   onOpenSiteSwitcher?: () => void;
   onOpenEngineerPortal?: () => void;
+  onOpenConnectInverter?: () => void;
   onEditProfile?: () => void;
   isLoading?: boolean;
 }
@@ -47,6 +48,7 @@ export const ClientMoreScreen: React.FC<ClientMoreScreenProps> = ({
   onOpenNotificationSettings,
   onOpenSiteSwitcher,
   onOpenEngineerPortal,
+  onOpenConnectInverter,
   onEditProfile,
   isLoading,
 }) => {
@@ -397,6 +399,39 @@ export const ClientMoreScreen: React.FC<ClientMoreScreenProps> = ({
                 />
               </Svg>
             </TouchableOpacity>
+
+            {/* Connect / Manage Inverter */}
+            {onOpenConnectInverter && (
+              <TouchableOpacity
+                style={styles.settingsRow}
+                activeOpacity={0.7}
+                onPress={onOpenConnectInverter}
+              >
+                <View style={[styles.settingsIconBadge, { backgroundColor: '#fff7ed' }]}>
+                  <Svg width={18} height={18} viewBox="0 0 24 24" fill="none">
+                    <Path
+                      d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"
+                      stroke="#ea580c"
+                      strokeWidth={1.8}
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </Svg>
+                </View>
+                <Text style={[styles.settingsLabel, { color: '#0f172a', fontWeight: '600' }]}>
+                  Connect / Pair Solar Inverter
+                </Text>
+                <Svg width={18} height={18} viewBox="0 0 24 24" fill="none">
+                  <Path
+                    d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                    stroke="#ea580c"
+                    strokeWidth={2.2}
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </Svg>
+              </TouchableOpacity>
+            )}
 
             {/* Field Engineer Portal */}
             {onOpenEngineerPortal && (
