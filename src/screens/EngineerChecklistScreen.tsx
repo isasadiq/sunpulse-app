@@ -159,7 +159,7 @@ export const EngineerChecklistScreen: React.FC<EngineerChecklistScreenProps> = (
             activeOpacity={0.75}
             onPress={handleAddNoteOrPhoto}
           >
-            <Svg width={18} height={18} viewBox="0 0 24 24" fill="none" stroke="#dc2626" strokeWidth={2.2}>
+            <Svg width={18} height={18} viewBox="0 0 24 24" fill="none" stroke="#EA580C" strokeWidth={2.2}>
               <Path strokeLinecap="round" strokeLinejoin="round" d="M12 5v14M5 12h14" />
             </Svg>
             <Text style={styles.dashedButtonText}>Add a note or photo</Text>
@@ -174,7 +174,7 @@ export const EngineerChecklistScreen: React.FC<EngineerChecklistScreenProps> = (
                 onPress={onCompleteVisit}
               >
                 <LinearGradient
-                  colors={['#dc2626', '#b91c1c']}
+                  colors={['#EA580C', '#C2410C']}
                   start={{ x: 0, y: 0 }}
                   end={{ x: 0, y: 1 }}
                   style={styles.completedButtonGradient}
@@ -292,7 +292,7 @@ const styles = StyleSheet.create({
   progressBarFill: {
     height: '100%',
     borderRadius: 4,
-    backgroundColor: '#dc2626',
+    backgroundColor: '#EA580C',
   },
   checklistCard: {
     marginTop: 14,
@@ -323,7 +323,7 @@ const styles = StyleSheet.create({
     width: 28,
     height: 28,
     borderRadius: 8,
-    backgroundColor: '#dc2626',
+    backgroundColor: '#EA580C',
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -388,7 +388,7 @@ const styles = StyleSheet.create({
     height: 48,
     borderRadius: 12,
     overflow: 'hidden',
-    shadowColor: '#dc2626',
+    shadowColor: '#EA580C',
     shadowOffset: { width: 0, height: 4 },
     shadowOpacity: 0.35,
     shadowRadius: 10,

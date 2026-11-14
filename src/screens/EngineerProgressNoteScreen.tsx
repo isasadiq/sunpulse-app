@@ -151,7 +151,7 @@ export const EngineerProgressNoteScreen: React.FC<EngineerProgressNoteScreenProp
                 disabled={isDictating}
                 accessibilityLabel="Dictate note"
               >
-                <Svg width={18} height={18} viewBox="0 0 24 24" fill="none" stroke="#dc2626" strokeWidth={1.9} strokeLinecap="round" strokeLinejoin="round">
+                <Svg width={18} height={18} viewBox="0 0 24 24" fill="none" stroke="#EA580C" strokeWidth={1.9} strokeLinecap="round" strokeLinejoin="round">
                   <Path d="M12 18.75a6 6 0 006-6v-1.5m-6 7.5a6 6 0 01-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 01-3-3V4.5a3 3 0 116 0v8.25a3 3 0 01-3 3z" />
                 </Svg>
                 <Text style={styles.dictateText}>
@@ -173,7 +173,7 @@ export const EngineerProgressNoteScreen: React.FC<EngineerProgressNoteScreenProp
                   activeOpacity={0.75}
                   onPress={() => handleQuickAdd(item)}
                 >
-                  <Svg width={14} height={14} viewBox="0 0 24 24" fill="none" stroke="#dc2626" strokeWidth={2.4} strokeLinecap="round">
+                  <Svg width={14} height={14} viewBox="0 0 24 24" fill="none" stroke="#EA580C" strokeWidth={2.4} strokeLinecap="round">
                     <Path d="M12 5v14M5 12h14" />
                   </Svg>
                   <Text style={styles.pillText}>{item}</Text>
@@ -192,7 +192,7 @@ export const EngineerProgressNoteScreen: React.FC<EngineerProgressNoteScreenProp
             <Switch
               value={shareWithClient}
               onValueChange={setShareWithClient}
-              trackColor={{ false: '#cbd5e1', true: '#dc2626' }}
+              trackColor={{ false: '#cbd5e1', true: '#EA580C' }}
               thumbColor="#ffffff"
             />
           </View>
@@ -208,7 +208,7 @@ export const EngineerProgressNoteScreen: React.FC<EngineerProgressNoteScreenProp
               disabled={isSaving}
             >
               <LinearGradient
-                colors={['#dc2626', '#b91c1c']}
+                colors={['#EA580C', '#C2410C']}
                 start={{ x: 0.5, y: 0 }}
                 end={{ x: 0.5, y: 1 }}
                 style={styles.saveButton}
@@ -402,7 +402,7 @@ const styles = StyleSheet.create({
     borderRadius: 12,
     alignItems: 'center',
     justifyContent: 'center',
-    shadowColor: '#dc2626',
+    shadowColor: '#EA580C',
     shadowOffset: { width: 0, height: 4 },
     shadowOpacity: 0.35,
     shadowRadius: 10,

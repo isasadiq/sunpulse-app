@@ -153,7 +153,7 @@ export const EngineerMediaScreen: React.FC<EngineerMediaScreenProps> = ({
               onPress={handleTakePhoto}
             >
               <LinearGradient
-                colors={['#dc2626', '#b91c1c']}
+                colors={['#EA580C', '#C2410C']}
                 start={{ x: 0, y: 0 }}
                 end={{ x: 0, y: 1 }}
                 style={styles.takePhotoButton}
@@ -292,7 +292,7 @@ export const EngineerMediaScreen: React.FC<EngineerMediaScreenProps> = ({
             disabled={isSaving}
           >
             <LinearGradient
-              colors={['#dc2626', '#b91c1c']}
+              colors={['#EA580C', '#C2410C']}
               start={{ x: 0, y: 0 }}
               end={{ x: 0, y: 1 }}
               style={styles.saveButton}
@@ -341,7 +341,7 @@ export const EngineerMediaScreen: React.FC<EngineerMediaScreenProps> = ({
                     {st}
                   </Text>
                   {selectedStage === st && (
-                    <Svg width={16} height={16} viewBox="0 0 24 24" fill="none" stroke="#dc2626" strokeWidth={3} strokeLinecap="round" strokeLinejoin="round">
+                    <Svg width={16} height={16} viewBox="0 0 24 24" fill="none" stroke="#EA580C" strokeWidth={3} strokeLinecap="round" strokeLinejoin="round">
                       <Path d="M4.5 12.75l6 6 9-13.5" />
                     </Svg>
                   )}
@@ -420,7 +420,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     gap: 8,
-    shadowColor: '#dc2626',
+    shadowColor: '#EA580C',
     shadowOffset: { width: 0, height: 4 },
     shadowOpacity: 0.35,
     shadowRadius: 10,
@@ -456,7 +456,7 @@ const styles = StyleSheet.create({
   galleryLinkText: {
     fontSize: 13,
     fontWeight: '600',
-    color: '#dc2626',
+    color: '#EA580C',
   },
   stageSection: {
     marginTop: 14,
@@ -608,7 +608,7 @@ const styles = StyleSheet.create({
     borderRadius: 12,
     alignItems: 'center',
     justifyContent: 'center',
-    shadowColor: '#dc2626',
+    shadowColor: '#EA580C',
     shadowOffset: { width: 0, height: 4 },
     shadowOpacity: 0.35,
     shadowRadius: 10,
@@ -650,7 +650,7 @@ const styles = StyleSheet.create({
     borderRadius: 10,
   },
   modalStageItemActive: {
-    backgroundColor: '#fef2f2',
+    backgroundColor: '#FFF7ED',
   },
   modalStageText: {
     fontSize: 14,
@@ -658,7 +658,7 @@ const styles = StyleSheet.create({
     color: '#334155',
   },
   modalStageTextActive: {
-    color: '#dc2626',
+    color: '#EA580C',
     fontWeight: '700',
   },
 });

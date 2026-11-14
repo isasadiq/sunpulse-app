@@ -181,7 +181,7 @@ export const ExpansionCalculatorScreen: React.FC<ExpansionCalculatorScreenProps>
   };
 
   const renderIcon = (type: string, active: boolean) => {
-    const strokeColor = active ? '#dc2626' : '#334155';
+    const strokeColor = active ? '#EA580C' : '#334155';
     switch (type) {
       case 'ac':
         return (
@@ -355,7 +355,7 @@ export const ExpansionCalculatorScreen: React.FC<ExpansionCalculatorScreenProps>
             onPress={handleEstimatePress}
           >
             <LinearGradient
-              colors={['#dc2626', '#b91c1c']}
+              colors={['#EA580C', '#C2410C']}
               start={{ x: 0, y: 0 }}
               end={{ x: 0, y: 1 }}
               style={styles.estimateButtonGradient}
@@ -467,7 +467,7 @@ const styles = StyleSheet.create({
     flexShrink: 0,
   },
   iconBadgeActive: {
-    backgroundColor: '#fef2f2',
+    backgroundColor: '#FFF7ED',
   },
   iconBadgeInactive: {
     backgroundColor: '#f1f5f9',
@@ -514,7 +514,7 @@ const styles = StyleSheet.create({
     width: 40,
     height: 40,
     borderRadius: 12,
-    backgroundColor: '#dc2626',
+    backgroundColor: '#EA580C',
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -586,7 +586,7 @@ const styles = StyleSheet.create({
     width: '100%',
     borderRadius: 12,
     overflow: 'hidden',
-    shadowColor: '#dc2626',
+    shadowColor: '#EA580C',
     shadowOffset: { width: 0, height: 4 },
     shadowOpacity: 0.35,
     shadowRadius: 10,

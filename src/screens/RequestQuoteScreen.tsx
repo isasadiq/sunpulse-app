@@ -113,7 +113,7 @@ export const RequestQuoteScreen: React.FC<RequestQuoteScreenProps> = ({
           {/* Upgrade Summary Banner */}
           <View style={styles.upgradeCard}>
             <View style={styles.upgradeIconBadge}>
-              <Svg width={20} height={20} viewBox="0 0 24 24" fill="none" stroke="#dc2626" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
+              <Svg width={20} height={20} viewBox="0 0 24 24" fill="none" stroke="#EA580C" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
                 <Path d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
               </Svg>
             </View>
@@ -134,7 +134,7 @@ export const RequestQuoteScreen: React.FC<RequestQuoteScreenProps> = ({
                 onPress={handleSiteSelect}
               >
                 <View style={styles.sitePickerLeft}>
-                  <Svg width={18} height={18} viewBox="0 0 24 24" fill="none" stroke="#dc2626" strokeWidth={1.9} strokeLinecap="round" strokeLinejoin="round">
+                  <Svg width={18} height={18} viewBox="0 0 24 24" fill="none" stroke="#EA580C" strokeWidth={1.9} strokeLinecap="round" strokeLinejoin="round">
                     <Path d="M2.25 12l8.954-8.955a1.126 1.126 0 011.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
                   </Svg>
                   <Text style={styles.sitePickerText}>{selectedSite}</Text>
@@ -238,7 +238,7 @@ export const RequestQuoteScreen: React.FC<RequestQuoteScreenProps> = ({
             disabled={isSubmitting}
           >
             <LinearGradient
-              colors={['#dc2626', '#b91c1c']}
+              colors={['#EA580C', '#C2410C']}
               start={{ x: 0, y: 0 }}
               end={{ x: 0, y: 1 }}
               style={styles.submitButtonGradient}
@@ -316,7 +316,7 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: '#fecaca',
     borderRadius: 16,
-    backgroundColor: '#fef2f2',
+    backgroundColor: '#FFF7ED',
     flexDirection: 'row',
     alignItems: 'center',
     gap: 12,
@@ -449,9 +449,9 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   pillSelected: {
-    backgroundColor: '#dc2626',
+    backgroundColor: '#EA580C',
     borderWidth: 1,
-    borderColor: '#dc2626',
+    borderColor: '#EA580C',
   },
   pillUnselected: {
     backgroundColor: '#ffffff',
@@ -501,7 +501,7 @@ const styles = StyleSheet.create({
     width: '100%',
     borderRadius: 12,
     overflow: 'hidden',
-    shadowColor: '#dc2626',
+    shadowColor: '#EA580C',
     shadowOffset: { width: 0, height: 4 },
     shadowOpacity: 0.35,
     shadowRadius: 10,

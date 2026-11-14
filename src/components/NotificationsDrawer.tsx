@@ -243,7 +243,7 @@ export const NotificationsDrawer: React.FC<NotificationsDrawerProps> = ({
                 <Svg width={18} height={18} viewBox="0 0 24 24" fill="none">
                   <Path
                     d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z"
-                    stroke="#dc2626"
+                    stroke="#EA580C"
                     strokeWidth={1.8}
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -423,7 +423,7 @@ const styles = StyleSheet.create({
   markReadLink: {
     fontSize: 13,
     fontWeight: '600',
-    color: '#dc2626',
+    color: '#EA580C',
   },
   sectionHeader: {
     marginTop: 14,
@@ -465,7 +465,7 @@ const styles = StyleSheet.create({
     width: 36,
     height: 36,
     borderRadius: 10,
-    backgroundColor: '#fef2f2',
+    backgroundColor: '#FFF7ED',
     alignItems: 'center',
     justifyContent: 'center',
     flexShrink: 0,
@@ -499,7 +499,7 @@ const styles = StyleSheet.create({
     width: 8,
     height: 8,
     borderRadius: 4,
-    backgroundColor: '#dc2626',
+    backgroundColor: '#EA580C',
     marginTop: 6,
     flexShrink: 0,
   },

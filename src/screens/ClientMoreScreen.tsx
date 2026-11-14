@@ -202,8 +202,8 @@ export const ClientMoreScreen: React.FC<ClientMoreScreenProps> = ({
             <RefreshControl
               refreshing={refreshing}
               onRefresh={handleRefresh}
-              tintColor="#dc2626"
-              colors={['#dc2626']}
+              tintColor="#EA580C"
+              colors={['#EA580C']}
             />
           }
         >
@@ -222,7 +222,7 @@ export const ClientMoreScreen: React.FC<ClientMoreScreenProps> = ({
               <Svg width={18} height={18} viewBox="0 0 24 24" fill="none">
                 <Path
                   d="M2.25 12l8.954-8.955a1.126 1.126 0 011.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
-                  stroke="#dc2626"
+                  stroke="#EA580C"
                   strokeWidth={1.9}
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -267,7 +267,7 @@ export const ClientMoreScreen: React.FC<ClientMoreScreenProps> = ({
             accessibilityLabel="Edit profile"
           >
             <LinearGradient
-              colors={['#dc2626', '#b91c1c']}
+              colors={['#EA580C', '#C2410C']}
               start={{ x: 0.5, y: 0 }}
               end={{ x: 0.5, y: 1 }}
               style={styles.avatarBadge}
@@ -288,10 +288,10 @@ export const ClientMoreScreen: React.FC<ClientMoreScreenProps> = ({
           >
             <View style={styles.calculatorIconBadge}>
               <Svg width={22} height={22} viewBox="0 0 24 24" fill="none">
-                <Rect x={4} y={2} width={16} height={20} rx={2} stroke="#dc2626" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round" />
-                <Line x1={8} y1={6} x2={16} y2={6} stroke="#dc2626" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round" />
-                <Line x1={16} y1={14} x2={16} y2={18} stroke="#dc2626" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round" />
-                <Path d="M8 10h.01M12 10h.01M16 10h.01M8 14h.01M12 14h.01M8 18h.01M12 18h.01" stroke="#dc2626" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round" />
+                <Rect x={4} y={2} width={16} height={20} rx={2} stroke="#EA580C" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round" />
+                <Line x1={8} y1={6} x2={16} y2={6} stroke="#EA580C" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round" />
+                <Line x1={16} y1={14} x2={16} y2={18} stroke="#EA580C" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round" />
+                <Path d="M8 10h.01M12 10h.01M16 10h.01M8 14h.01M12 14h.01M8 18h.01M12 18h.01" stroke="#EA580C" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round" />
               </Svg>
             </View>
             <View style={styles.calculatorTextContainer}>
@@ -440,24 +440,24 @@ export const ClientMoreScreen: React.FC<ClientMoreScreenProps> = ({
                 activeOpacity={0.7}
                 onPress={onOpenEngineerPortal}
               >
-                <View style={[styles.settingsIconBadge, { backgroundColor: '#fef2f2' }]}>
+                <View style={[styles.settingsIconBadge, { backgroundColor: '#FFF7ED' }]}>
                   <Svg width={18} height={18} viewBox="0 0 24 24" fill="none">
                     <Path
                       d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.673-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 013.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0a48.667 48.667 0 00-7.5 0M12 12.75h.008v.008H12v-.008z"
-                      stroke="#dc2626"
+                      stroke="#EA580C"
                       strokeWidth={1.8}
                       strokeLinecap="round"
                       strokeLinejoin="round"
                     />
                   </Svg>
                 </View>
-                <Text style={[styles.settingsLabel, { color: '#dc2626', fontWeight: '600' }]}>
+                <Text style={[styles.settingsLabel, { color: '#EA580C', fontWeight: '600' }]}>
                   Engineer Portal (Field Jobs)
                 </Text>
                 <Svg width={18} height={18} viewBox="0 0 24 24" fill="none">
                   <Path
                     d="M8.25 4.5l7.5 7.5-7.5 7.5"
-                    stroke="#dc2626"
+                    stroke="#EA580C"
                     strokeWidth={2.2}
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -476,7 +476,7 @@ export const ClientMoreScreen: React.FC<ClientMoreScreenProps> = ({
             <Svg width={18} height={18} viewBox="0 0 24 24" fill="none">
               <Path
                 d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15M12 9l-3 3m0 0l3 3m-3-3h12.75"
-                stroke="#b91c1c"
+                stroke="#C2410C"
                 strokeWidth={1.9}
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -571,7 +571,7 @@ export const ClientMoreScreen: React.FC<ClientMoreScreenProps> = ({
             <Svg width={24} height={24} viewBox="0 0 24 24" fill="none">
               <Path
                 d="M6.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM12.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM18.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
-                stroke="#dc2626"
+                stroke="#EA580C"
                 strokeWidth={2}
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -652,7 +652,7 @@ const styles = StyleSheet.create({
     width: 9,
     height: 9,
     borderRadius: 5,
-    backgroundColor: '#dc2626',
+    backgroundColor: '#EA580C',
     borderWidth: 2,
     borderColor: '#ffffff',
   },
@@ -708,7 +708,7 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: '#fecaca',
     borderRadius: 16,
-    backgroundColor: '#fef2f2',
+    backgroundColor: '#FFF7ED',
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',
@@ -800,7 +800,7 @@ const styles = StyleSheet.create({
     fontFamily: 'System',
     fontSize: 15,
     fontWeight: '700',
-    color: '#b91c1c',
+    color: '#C2410C',
   },
   bottomNav: {
     position: 'absolute',
@@ -831,7 +831,7 @@ const styles = StyleSheet.create({
   navLabelActive: {
     fontSize: 11,
     fontWeight: '700',
-    color: '#dc2626',
+    color: '#EA580C',
   },
 });
 

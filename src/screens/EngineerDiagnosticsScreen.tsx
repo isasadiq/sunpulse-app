@@ -164,7 +164,7 @@ export const EngineerDiagnosticsScreen: React.FC<EngineerDiagnosticsScreenProps>
                 activeOpacity={0.75}
                 onPress={handleAddMppt}
               >
-                <Svg width={14} height={14} viewBox="0 0 24 24" fill="none" stroke="#dc2626" strokeWidth={2.6} strokeLinecap="round">
+                <Svg width={14} height={14} viewBox="0 0 24 24" fill="none" stroke="#EA580C" strokeWidth={2.6} strokeLinecap="round">
                   <Path d="M12 5v14M5 12h14" />
                 </Svg>
                 <Text style={styles.addMpptText}>Add another MPPT</Text>
@@ -265,7 +265,7 @@ export const EngineerDiagnosticsScreen: React.FC<EngineerDiagnosticsScreenProps>
               disabled={isSaving}
             >
               <LinearGradient
-                colors={['#dc2626', '#b91c1c']}
+                colors={['#EA580C', '#C2410C']}
                 start={{ x: 0.5, y: 0 }}
                 end={{ x: 0.5, y: 1 }}
                 style={styles.saveButton}
@@ -417,7 +417,7 @@ const styles = StyleSheet.create({
   addMpptText: {
     fontSize: 13,
     fontWeight: '600',
-    color: '#dc2626',
+    color: '#EA580C',
   },
   bottomSection: {
     marginTop: 'auto',
@@ -430,7 +430,7 @@ const styles = StyleSheet.create({
     borderRadius: 12,
     alignItems: 'center',
     justifyContent: 'center',
-    shadowColor: '#dc2626',
+    shadowColor: '#EA580C',
     shadowOffset: { width: 0, height: 4 },
     shadowOpacity: 0.35,
     shadowRadius: 10,

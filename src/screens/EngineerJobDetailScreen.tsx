@@ -147,7 +147,7 @@ export const EngineerJobDetailScreen: React.FC<EngineerJobDetailScreenProps> = (
             <Svg style={StyleSheet.absoluteFill} pointerEvents="none">
               <Defs>
                 <RadialGradient id="heroGlow" cx="100%" cy="0%" r="60%">
-                  <Stop offset="0%" stopColor="#dc2626" stopOpacity="0.38" />
+                  <Stop offset="0%" stopColor="#EA580C" stopOpacity="0.38" />
                   <Stop offset="100%" stopColor="#0f172a" stopOpacity="0" />
                 </RadialGradient>
               </Defs>
@@ -188,7 +188,7 @@ export const EngineerJobDetailScreen: React.FC<EngineerJobDetailScreenProps> = (
               onPress={onOpenPhotos}
             >
               <View style={styles.actionIconBadge}>
-                <Svg width={20} height={20} viewBox="0 0 24 24" fill="none" stroke="#dc2626" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
+                <Svg width={20} height={20} viewBox="0 0 24 24" fill="none" stroke="#EA580C" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
                   <Path d="M6.827 6.175A2.31 2.31 0 015.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 00-1.134-.175 2.31 2.31 0 01-1.64-1.055l-.822-1.316a2.192 2.192 0 00-1.736-1.039 48.774 48.774 0 00-5.232 0 2.192 2.192 0 00-1.736 1.039l-.821 1.316z" />
                   <Path d="M16.5 12.75a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0z" />
                 </Svg>
@@ -212,7 +212,7 @@ export const EngineerJobDetailScreen: React.FC<EngineerJobDetailScreenProps> = (
               }}
             >
               <View style={styles.actionIconBadge}>
-                <Svg width={20} height={20} viewBox="0 0 24 24" fill="none" stroke="#dc2626" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
+                <Svg width={20} height={20} viewBox="0 0 24 24" fill="none" stroke="#EA580C" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
                   <Path d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
                 </Svg>
               </View>
@@ -237,7 +237,7 @@ export const EngineerJobDetailScreen: React.FC<EngineerJobDetailScreenProps> = (
               }}
             >
               <View style={styles.actionIconBadge}>
-                <Svg width={20} height={20} viewBox="0 0 24 24" fill="none" stroke="#dc2626" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
+                <Svg width={20} height={20} viewBox="0 0 24 24" fill="none" stroke="#EA580C" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
                   <Path d="M9.348 14.651a3.75 3.75 0 010-5.303m5.304 0a3.75 3.75 0 010 5.303m-7.425 2.122a6.75 6.75 0 010-9.546m9.546 0a6.75 6.75 0 010 9.546M5.106 18.894c-3.808-3.808-3.808-9.98 0-13.788m13.788 0c3.808 3.808 3.808 9.98 0 13.788M12 12h.008v.008H12V12zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
                 </Svg>
               </View>
@@ -260,7 +260,7 @@ export const EngineerJobDetailScreen: React.FC<EngineerJobDetailScreenProps> = (
               }}
             >
               <View style={styles.actionIconBadge}>
-                <Svg width={20} height={20} viewBox="0 0 24 24" fill="none" stroke="#dc2626" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
+                <Svg width={20} height={20} viewBox="0 0 24 24" fill="none" stroke="#EA580C" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
                   <Path d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" />
                 </Svg>
               </View>
@@ -323,7 +323,7 @@ export const EngineerJobDetailScreen: React.FC<EngineerJobDetailScreenProps> = (
             disabled={isDone}
           >
             <LinearGradient
-              colors={isDone ? ['#16a34a', '#15803d'] : ['#dc2626', '#b91c1c']}
+              colors={isDone ? ['#16a34a', '#15803d'] : ['#EA580C', '#C2410C']}
               start={{ x: 0.5, y: 0 }}
               end={{ x: 0.5, y: 1 }}
               style={styles.ctaButton}
@@ -483,12 +483,12 @@ const styles = StyleSheet.create({
     paddingVertical: 3,
     paddingHorizontal: 10,
     borderRadius: 999,
-    backgroundColor: '#fef2f2',
+    backgroundColor: '#FFF7ED',
   },
   leaderBadgeText: {
     fontSize: 12,
     fontWeight: '700',
-    color: '#b91c1c',
+    color: '#C2410C',
   },
   heroCard: {
     marginTop: 18,
@@ -535,7 +535,7 @@ const styles = StyleSheet.create({
   heroProgressBarFill: {
     height: '100%',
     borderRadius: 4,
-    backgroundColor: '#dc2626',
+    backgroundColor: '#EA580C',
   },
   heroNextStage: {
     marginTop: 8,
@@ -566,7 +566,7 @@ const styles = StyleSheet.create({
     width: 40,
     height: 40,
     borderRadius: 12,
-    backgroundColor: '#fef2f2',
+    backgroundColor: '#FFF7ED',
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -675,7 +675,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     gap: 8,
-    shadowColor: '#dc2626',
+    shadowColor: '#EA580C',
     shadowOffset: { width: 0, height: 4 },
     shadowOpacity: 0.35,
     shadowRadius: 10,
@@ -759,7 +759,7 @@ const styles = StyleSheet.create({
     borderRadius: 12,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#dc2626',
+    backgroundColor: '#EA580C',
   },
   modalConfirmText: {
     fontSize: 14,

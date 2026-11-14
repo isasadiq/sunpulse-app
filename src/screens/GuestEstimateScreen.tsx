@@ -127,7 +127,7 @@ export const GuestEstimateScreen: React.FC<GuestEstimateScreenProps> = ({
                 <Text style={styles.costValueRed}>{formattedSolarCost}</Text>
                 <View style={styles.costBarTrack}>
                   <LinearGradient
-                    colors={['#dc2626', '#b91c1c']}
+                    colors={['#EA580C', '#C2410C']}
                     start={{ x: 0, y: 0 }}
                     end={{ x: 1, y: 0 }}
                     style={[styles.costBarFillSolar, { width: `${solarBarPercent}%` }]}
@@ -175,7 +175,7 @@ export const GuestEstimateScreen: React.FC<GuestEstimateScreenProps> = ({
               onPress={onRequestQuote}
             >
               <LinearGradient
-                colors={['#dc2626', '#b91c1c']}
+                colors={['#EA580C', '#C2410C']}
                 start={{ x: 0, y: 0 }}
                 end={{ x: 0, y: 1 }}
                 style={styles.quoteButtonGradient}
@@ -376,7 +376,7 @@ const styles = StyleSheet.create({
     marginTop: 4,
     fontSize: 22,
     fontWeight: '800',
-    color: '#b91c1c',
+    color: '#C2410C',
     letterSpacing: -0.4,
   },
   costBarTrack: {
@@ -454,7 +454,7 @@ const styles = StyleSheet.create({
     height: 48,
     borderRadius: 12,
     overflow: 'hidden',
-    shadowColor: '#dc2626',
+    shadowColor: '#EA580C',
     shadowOffset: { width: 0, height: 4 },
     shadowOpacity: 0.35,
     shadowRadius: 10,

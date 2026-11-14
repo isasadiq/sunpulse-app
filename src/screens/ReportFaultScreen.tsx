@@ -152,7 +152,7 @@ export const ReportFaultScreen: React.FC<ReportFaultScreenProps> = ({
                   <Svg width={18} height={18} viewBox="0 0 24 24" fill="none">
                     <Path
                       d="M2.25 12l8.954-8.955a1.126 1.126 0 011.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
-                      stroke="#dc2626"
+                      stroke="#EA580C"
                       strokeWidth={1.9}
                       strokeLinecap="round"
                       strokeLinejoin="round"
@@ -345,7 +345,7 @@ export const ReportFaultScreen: React.FC<ReportFaultScreenProps> = ({
               onPress={handleSubmit}
             >
               <LinearGradient
-                colors={['#dc2626', '#b91c1c']}
+                colors={['#EA580C', '#C2410C']}
                 start={{ x: 0.5, y: 0 }}
                 end={{ x: 0.5, y: 1 }}
                 style={styles.submitButton}
@@ -494,8 +494,8 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   categoryPillSelected: {
-    borderColor: '#dc2626',
-    backgroundColor: '#dc2626',
+    borderColor: '#EA580C',
+    backgroundColor: '#EA580C',
   },
   categoryPillText: {
     fontSize: 13,
@@ -519,13 +519,13 @@ const styles = StyleSheet.create({
   },
   urgencyNormalSelected: {
     borderWidth: 1.5,
-    borderColor: '#dc2626',
-    backgroundColor: '#fef2f2',
+    borderColor: '#EA580C',
+    backgroundColor: '#FFF7ED',
   },
   urgencyUrgentSelected: {
     borderWidth: 1.5,
-    borderColor: '#dc2626',
-    backgroundColor: '#fef2f2',
+    borderColor: '#EA580C',
+    backgroundColor: '#FFF7ED',
   },
   urgencyUnselected: {
     borderWidth: 1,
@@ -537,11 +537,11 @@ const styles = StyleSheet.create({
   },
   urgencyNormalTextSelected: {
     fontWeight: '700',
-    color: '#b91c1c',
+    color: '#C2410C',
   },
   urgencyUrgentTextSelected: {
     fontWeight: '700',
-    color: '#b91c1c',
+    color: '#C2410C',
   },
   urgencyTextUnselected: {
     fontWeight: '600',
@@ -630,7 +630,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     gap: 8,
-    shadowColor: '#dc2626',
+    shadowColor: '#EA580C',
     shadowOffset: { width: 0, height: 4 },
     shadowOpacity: 0.35,
     shadowRadius: 10,

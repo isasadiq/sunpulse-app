@@ -315,7 +315,7 @@ export const ManagementSupportScreen: React.FC<ManagementSupportScreenProps> = (
                     onPress={() => onDispatchTicket?.(ticket)}
                   >
                     <LinearGradient
-                      colors={['#dc2626', '#b91c1c']}
+                      colors={['#EA580C', '#C2410C']}
                       start={{ x: 0, y: 0 }}
                       end={{ x: 0, y: 1 }}
                       style={styles.dispatchButtonGradient}
@@ -362,7 +362,7 @@ export const ManagementSupportScreen: React.FC<ManagementSupportScreenProps> = (
             activeOpacity={0.7}
             onPress={() => onSwitchTab?.('support')}
           >
-            <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="#dc2626" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
+            <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="#EA580C" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
               <Path d="M16.712 4.33a9.027 9.027 0 011.652 1.306c.51.51.944 1.064 1.306 1.652M16.712 4.33l-3.448 4.138m3.448-4.138a9.014 9.014 0 00-9.424 0M19.67 7.288l-4.138 3.448m4.138-3.448a9.014 9.014 0 010 9.424m-4.138-5.976a3.736 3.736 0 00-.88-1.388 3.737 3.737 0 00-1.388-.88m2.268 2.268a3.765 3.765 0 010 2.528m-2.268-4.796a3.765 3.765 0 00-2.528 0m4.796 4.796c-.181.506-.475.982-.88 1.388a3.736 3.736 0 01-1.388.88m2.268-2.268l4.138 3.448m0 0a9.027 9.027 0 01-1.306 1.652c-.51.51-1.064.944-1.652 1.306m0 0l-3.448-4.138m3.448 4.138a9.014 9.014 0 01-9.424 0m5.976-4.138a3.765 3.765 0 01-2.528 0m0 0a3.736 3.736 0 01-1.388-.88 3.737 3.737 0 01-.88-1.388m2.268 2.268L7.288 19.67m0 0a9.024 9.024 0 01-1.652-1.306 9.027 9.027 0 01-1.306-1.652m0 0l4.138-3.448M4.33 16.712a9.014 9.014 0 010-9.424m4.138 5.976a3.765 3.765 0 010-2.528m0 0c.181-.506.475-.982.88-1.388a3.736 3.736 0 011.388-.88m-2.268 2.268L4.33 7.288m6.406 1.18L7.288 4.33m0 0a9.024 9.024 0 00-1.652 1.306A9.025 9.025 0 004.33 7.288" />
             </Svg>
             <Text style={styles.navLabelActive}>Support</Text>
@@ -460,7 +460,7 @@ const styles = StyleSheet.create({
   },
   clearSearchText: {
     fontSize: 13,
-    color: '#dc2626',
+    color: '#EA580C',
     fontWeight: '600',
   },
   filterRowWrapper: {
@@ -481,9 +481,9 @@ const styles = StyleSheet.create({
     gap: 6,
   },
   filterPillActive: {
-    backgroundColor: '#dc2626',
+    backgroundColor: '#EA580C',
     borderWidth: 1,
-    borderColor: '#dc2626',
+    borderColor: '#EA580C',
   },
   filterPillInactive: {
     backgroundColor: '#ffffff',
@@ -598,7 +598,7 @@ const styles = StyleSheet.create({
   dispatchButton: {
     borderRadius: 12,
     overflow: 'hidden',
-    shadowColor: '#dc2626',
+    shadowColor: '#EA580C',
     shadowOpacity: 0.25,
     shadowRadius: 8,
     shadowOffset: { width: 0, height: 3 },
@@ -634,7 +634,7 @@ const styles = StyleSheet.create({
   navLabelActive: {
     fontSize: 11,
     fontWeight: '700',
-    color: '#dc2626',
+    color: '#EA580C',
   },
   navLabelInactive: {
     fontSize: 11,

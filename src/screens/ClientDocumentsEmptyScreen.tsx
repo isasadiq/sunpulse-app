@@ -80,7 +80,7 @@ export const ClientDocumentsEmptyScreen: React.FC<ClientDocumentsEmptyScreenProp
             onPress={handleSiteSwitch}
             accessibilityLabel="Switch site"
           >
-            <Svg width={18} height={18} viewBox="0 0 24 24" fill="none" stroke="#dc2626" strokeWidth={1.9} strokeLinecap="round" strokeLinejoin="round">
+            <Svg width={18} height={18} viewBox="0 0 24 24" fill="none" stroke="#EA580C" strokeWidth={1.9} strokeLinecap="round" strokeLinejoin="round">
               <Path d="M2.25 12l8.954-8.955a1.126 1.126 0 011.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
             </Svg>
             <Text style={styles.siteSelectorText}>{siteName}</Text>
@@ -111,7 +111,7 @@ export const ClientDocumentsEmptyScreen: React.FC<ClientDocumentsEmptyScreenProp
         {/* Empty State Center */}
         <View style={styles.emptyContainer}>
           <View style={styles.emptyIconBadge}>
-            <Svg width={40} height={40} viewBox="0 0 24 24" fill="none" stroke="#dc2626" strokeWidth={1.5} strokeLinecap="round" strokeLinejoin="round">
+            <Svg width={40} height={40} viewBox="0 0 24 24" fill="none" stroke="#EA580C" strokeWidth={1.5} strokeLinecap="round" strokeLinejoin="round">
               <Path d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
             </Svg>
           </View>
@@ -185,7 +185,7 @@ export const ClientDocumentsEmptyScreen: React.FC<ClientDocumentsEmptyScreenProp
             activeOpacity={0.7}
             onPress={() => handleTabPress('documents')}
           >
-            <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="#dc2626" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
+            <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="#EA580C" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
               <Path d="M2.25 12.75V12A2.25 2.25 0 014.5 9.75h15A2.25 2.25 0 0121.75 12v.75m-8.69-6.44l-2.12-2.12a1.5 1.5 0 00-1.061-.44H4.5A2.25 2.25 0 002.25 6v12a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9a2.25 2.25 0 00-2.25-2.25h-5.379a1.5 1.5 0 01-1.06-.44z" />
             </Svg>
             <Text style={styles.navLabelActive}>Documents</Text>
@@ -271,7 +271,7 @@ const styles = StyleSheet.create({
     width: 9,
     height: 9,
     borderRadius: 5,
-    backgroundColor: '#dc2626',
+    backgroundColor: '#EA580C',
     borderWidth: 2,
     borderColor: '#ffffff',
   },
@@ -307,7 +307,7 @@ const styles = StyleSheet.create({
     width: 88,
     height: 88,
     borderRadius: 44,
-    backgroundColor: '#fef2f2',
+    backgroundColor: '#FFF7ED',
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -361,7 +361,7 @@ const styles = StyleSheet.create({
     fontFamily: 'Inter-SemiBold',
     fontSize: 13,
     fontWeight: '600',
-    color: '#dc2626',
+    color: '#EA580C',
   },
   bottomNav: {
     height: 84,
@@ -389,6 +389,6 @@ const styles = StyleSheet.create({
     fontFamily: 'Inter-Bold',
     fontSize: 11,
     fontWeight: '700',
-    color: '#dc2626',
+    color: '#EA580C',
   },
 });

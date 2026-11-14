@@ -53,7 +53,7 @@ export const ManagementMoreScreen: React.FC<ManagementMoreScreenProps> = ({
             accessibilityLabel="Edit profile"
           >
             <LinearGradient
-              colors={['#dc2626', '#b91c1c']}
+              colors={['#EA580C', '#C2410C']}
               start={{ x: 0, y: 0 }}
               end={{ x: 0, y: 1 }}
               style={styles.avatarBadge}
@@ -155,7 +155,7 @@ export const ManagementMoreScreen: React.FC<ManagementMoreScreenProps> = ({
             activeOpacity={0.75}
             onPress={onSignOut}
           >
-            <Svg width={18} height={18} viewBox="0 0 24 24" fill="none" stroke="#b91c1c" strokeWidth={1.9} strokeLinecap="round" strokeLinejoin="round">
+            <Svg width={18} height={18} viewBox="0 0 24 24" fill="none" stroke="#C2410C" strokeWidth={1.9} strokeLinecap="round" strokeLinejoin="round">
               <Path d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15M12 9l-3 3m0 0l3 3m-3-3h12.75" />
             </Svg>
             <Text style={styles.signOutText}>Sign out</Text>
@@ -213,7 +213,7 @@ export const ManagementMoreScreen: React.FC<ManagementMoreScreenProps> = ({
             activeOpacity={0.8}
             onPress={() => onSwitchTab?.('more')}
           >
-            <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="#dc2626" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
+            <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="#EA580C" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
               <Path d="M6.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM12.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM18.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
             </Svg>
             <Text style={[styles.navText, styles.navTextActive]}>More</Text>
@@ -374,7 +374,7 @@ const styles = StyleSheet.create({
   signOutText: {
     fontSize: 15,
     fontWeight: '700',
-    color: '#b91c1c',
+    color: '#C2410C',
   },
 
   /* Bottom Nav */
@@ -405,7 +405,7 @@ const styles = StyleSheet.create({
     color: '#64748b',
   },
   navTextActive: {
-    color: '#dc2626',
+    color: '#EA580C',
     fontWeight: '700',
   },
 });

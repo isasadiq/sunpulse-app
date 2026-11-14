@@ -214,7 +214,7 @@ export const EngineerVisitsScreen: React.FC<EngineerVisitsScreenProps> = ({
                       onPress={() => handleVisitPress(visit)}
                     >
                       <LinearGradient
-                        colors={['#dc2626', '#b91c1c']}
+                        colors={['#EA580C', '#C2410C']}
                         start={{ x: 0, y: 0 }}
                         end={{ x: 0, y: 1 }}
                         style={styles.startButtonGradient}
@@ -295,7 +295,7 @@ export const EngineerVisitsScreen: React.FC<EngineerVisitsScreenProps> = ({
               height={24}
               viewBox="0 0 24 24"
               fill="none"
-              stroke={activeTab === 'jobs' ? '#dc2626' : '#64748b'}
+              stroke={activeTab === 'jobs' ? '#EA580C' : '#64748b'}
               strokeWidth={activeTab === 'jobs' ? 2 : 1.8}
             >
               <Path
@@ -325,7 +325,7 @@ export const EngineerVisitsScreen: React.FC<EngineerVisitsScreenProps> = ({
               height={24}
               viewBox="0 0 24 24"
               fill="none"
-              stroke={activeTab === 'tickets' ? '#dc2626' : '#64748b'}
+              stroke={activeTab === 'tickets' ? '#EA580C' : '#64748b'}
               strokeWidth={activeTab === 'tickets' ? 2 : 1.8}
             >
               <Path
@@ -355,7 +355,7 @@ export const EngineerVisitsScreen: React.FC<EngineerVisitsScreenProps> = ({
               height={24}
               viewBox="0 0 24 24"
               fill="none"
-              stroke={activeTab === 'visits' ? '#dc2626' : '#64748b'}
+              stroke={activeTab === 'visits' ? '#EA580C' : '#64748b'}
               strokeWidth={activeTab === 'visits' ? 2 : 1.8}
             >
               <Path
@@ -385,7 +385,7 @@ export const EngineerVisitsScreen: React.FC<EngineerVisitsScreenProps> = ({
               height={24}
               viewBox="0 0 24 24"
               fill="none"
-              stroke={activeTab === 'more' ? '#dc2626' : '#64748b'}
+              stroke={activeTab === 'more' ? '#EA580C' : '#64748b'}
               strokeWidth={activeTab === 'more' ? 2 : 1.8}
             >
               <Path
@@ -463,7 +463,7 @@ const styles = StyleSheet.create({
     width: 9,
     height: 9,
     borderRadius: 5,
-    backgroundColor: '#dc2626',
+    backgroundColor: '#EA580C',
     borderWidth: 2,
     borderColor: '#ffffff',
   },
@@ -480,9 +480,9 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   filterPillActive: {
-    backgroundColor: '#dc2626',
+    backgroundColor: '#EA580C',
     borderWidth: 1,
-    borderColor: '#dc2626',
+    borderColor: '#EA580C',
   },
   filterPillInactive: {
     backgroundColor: '#ffffff',
@@ -638,7 +638,7 @@ const styles = StyleSheet.create({
     fontSize: 11,
   },
   navLabelActive: {
-    color: '#dc2626',
+    color: '#EA580C',
     fontWeight: '700',
   },
   navLabelInactive: {

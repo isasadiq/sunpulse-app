@@ -111,7 +111,7 @@ export const GuestQuoteScreen: React.FC<GuestQuoteScreenProps> = ({
           {/* System Summary Card */}
           <View style={styles.systemCard}>
             <View style={styles.systemIconBadge}>
-              <Svg width={20} height={20} viewBox="0 0 24 24" fill="none" stroke="#dc2626" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
+              <Svg width={20} height={20} viewBox="0 0 24 24" fill="none" stroke="#EA580C" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
                 <Path d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
               </Svg>
             </View>
@@ -219,7 +219,7 @@ export const GuestQuoteScreen: React.FC<GuestQuoteScreenProps> = ({
             disabled={isSubmitting}
           >
             <LinearGradient
-              colors={['#dc2626', '#b91c1c']}
+              colors={['#EA580C', '#C2410C']}
               start={{ x: 0, y: 0 }}
               end={{ x: 0, y: 1 }}
               style={styles.submitGradient}
@@ -309,7 +309,7 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: '#fecaca',
     borderRadius: 16,
-    backgroundColor: '#fef2f2',
+    backgroundColor: '#FFF7ED',
     flexDirection: 'row',
     alignItems: 'center',
     gap: 12,
@@ -407,9 +407,9 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   pillSelected: {
-    backgroundColor: '#dc2626',
+    backgroundColor: '#EA580C',
     borderWidth: 1,
-    borderColor: '#dc2626',
+    borderColor: '#EA580C',
   },
   pillUnselected: {
     backgroundColor: '#ffffff',
@@ -440,7 +440,7 @@ const styles = StyleSheet.create({
     width: '100%',
     borderRadius: 12,
     overflow: 'hidden',
-    shadowColor: '#dc2626',
+    shadowColor: '#EA580C',
     shadowOffset: { width: 0, height: 4 },
     shadowOpacity: 0.35,
     shadowRadius: 20,

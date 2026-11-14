@@ -166,7 +166,7 @@ export const ManagementProjectDetailScreen: React.FC<ManagementProjectDetailScre
                       {isInProgress && (
                         <View style={styles.inProgressNode}>
                           <LinearGradient
-                            colors={['#dc2626', '#b91c1c']}
+                            colors={['#EA580C', '#C2410C']}
                             style={styles.inProgressInnerDot}
                           />
                         </View>
@@ -242,7 +242,7 @@ export const ManagementProjectDetailScreen: React.FC<ManagementProjectDetailScre
               onPress={onEnrolMaintenance}
             >
               <LinearGradient
-                colors={['#dc2626', '#b91c1c']}
+                colors={['#EA580C', '#C2410C']}
                 start={{ x: 0, y: 0 }}
                 end={{ x: 0, y: 1 }}
                 style={styles.primaryGradient}
@@ -260,7 +260,7 @@ export const ManagementProjectDetailScreen: React.FC<ManagementProjectDetailScre
               onPress={handleActivateMobile}
             >
               <LinearGradient
-                colors={['#dc2626', '#b91c1c']}
+                colors={['#EA580C', '#C2410C']}
                 start={{ x: 0, y: 0 }}
                 end={{ x: 0, y: 1 }}
                 style={styles.primaryGradient}
@@ -448,7 +448,7 @@ const styles = StyleSheet.create({
     width: 22,
     height: 22,
     borderRadius: 11,
-    backgroundColor: '#fef2f2',
+    backgroundColor: '#FFF7ED',
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -502,7 +502,7 @@ const styles = StyleSheet.create({
   },
   stageStatusInProgress: {
     fontWeight: '700',
-    color: '#b91c1c',
+    color: '#C2410C',
   },
 
   /* Photos Card */
@@ -563,7 +563,7 @@ const styles = StyleSheet.create({
     width: '100%',
     borderRadius: 12,
     overflow: 'hidden',
-    shadowColor: '#dc2626',
+    shadowColor: '#EA580C',
     shadowOffset: { width: 0, height: 4 },
     shadowOpacity: 0.35,
     shadowRadius: 20,

@@ -168,7 +168,7 @@ export const ClientTicketScreen: React.FC<ClientTicketScreenProps> = ({
           {/* Engineer Card */}
           <View style={styles.engineerCard}>
             <LinearGradient
-              colors={['#dc2626', '#b91c1c']}
+              colors={['#EA580C', '#C2410C']}
               start={{ x: 0.5, y: 0 }}
               end={{ x: 0.5, y: 1 }}
               style={styles.engineerAvatar}
@@ -223,7 +223,7 @@ export const ClientTicketScreen: React.FC<ClientTicketScreenProps> = ({
               <Svg width={18} height={18} viewBox="0 0 24 24" fill="none">
                 <Path
                   d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
-                  stroke="#dc2626"
+                  stroke="#EA580C"
                   strokeWidth={1.9}
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -295,12 +295,12 @@ const styles = StyleSheet.create({
     paddingVertical: 3,
     paddingHorizontal: 10,
     borderRadius: 999,
-    backgroundColor: '#fef2f2',
+    backgroundColor: '#FFF7ED',
   },
   statusBadgeText: {
     fontSize: 12,
     fontWeight: '700',
-    color: '#b91c1c',
+    color: '#C2410C',
   },
   card: {
     marginTop: 14,
@@ -339,7 +339,7 @@ const styles = StyleSheet.create({
     width: 24,
     height: 24,
     borderRadius: 12,
-    backgroundColor: '#dc2626',
+    backgroundColor: '#EA580C',
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -349,7 +349,7 @@ const styles = StyleSheet.create({
     top: 26,
     width: 2,
     height: 26,
-    backgroundColor: '#dc2626',
+    backgroundColor: '#EA580C',
   },
   pendingLine: {
     position: 'absolute',
@@ -364,7 +364,7 @@ const styles = StyleSheet.create({
     height: 24,
     borderRadius: 12,
     borderWidth: 2,
-    borderColor: '#dc2626',
+    borderColor: '#EA580C',
     backgroundColor: '#ffffff',
     alignItems: 'center',
     justifyContent: 'center',
@@ -373,7 +373,7 @@ const styles = StyleSheet.create({
     width: 10,
     height: 10,
     borderRadius: 5,
-    backgroundColor: '#dc2626',
+    backgroundColor: '#EA580C',
   },
   pendingOuterCircle: {
     width: 24,
@@ -415,12 +415,12 @@ const styles = StyleSheet.create({
     paddingVertical: 3,
     paddingHorizontal: 10,
     borderRadius: 999,
-    backgroundColor: '#fef2f2',
+    backgroundColor: '#FFF7ED',
   },
   nowBadgeText: {
     fontSize: 12,
     fontWeight: '700',
-    color: '#b91c1c',
+    color: '#C2410C',
   },
   engineerCard: {
     marginTop: 12,

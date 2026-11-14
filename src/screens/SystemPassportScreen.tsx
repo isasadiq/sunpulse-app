@@ -90,7 +90,7 @@ export const SystemPassportScreen: React.FC<SystemPassportScreenProps> = ({
             onPress={handleSiteSwitch}
             accessibilityLabel="Switch site"
           >
-            <Svg width={18} height={18} viewBox="0 0 24 24" fill="none" stroke="#dc2626" strokeWidth={1.9} strokeLinecap="round" strokeLinejoin="round">
+            <Svg width={18} height={18} viewBox="0 0 24 24" fill="none" stroke="#EA580C" strokeWidth={1.9} strokeLinecap="round" strokeLinejoin="round">
               <Path d="M2.25 12l8.954-8.955a1.126 1.126 0 011.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
             </Svg>
             <Text style={styles.siteButtonText}>{siteName}</Text>
@@ -117,7 +117,7 @@ export const SystemPassportScreen: React.FC<SystemPassportScreenProps> = ({
           <Svg style={StyleSheet.absoluteFill} pointerEvents="none">
             <Defs>
               <RadialGradient id="passportHeroGlow" cx="100%" cy="0%" r="55%">
-                <Stop offset="0%" stopColor="#dc2626" stopOpacity="0.35" />
+                <Stop offset="0%" stopColor="#EA580C" stopOpacity="0.35" />
                 <Stop offset="100%" stopColor="#0f172a" stopOpacity="0" />
               </RadialGradient>
             </Defs>
@@ -203,7 +203,7 @@ export const SystemPassportScreen: React.FC<SystemPassportScreenProps> = ({
               height={20}
               viewBox="0 0 24 24"
               fill="none"
-              stroke="#dc2626"
+              stroke="#EA580C"
               strokeWidth={1.8}
               strokeLinecap="round"
               strokeLinejoin="round"
@@ -245,7 +245,7 @@ export const SystemPassportScreen: React.FC<SystemPassportScreenProps> = ({
           onPress={onRequestDatalogger || onSwitchToLive}
         >
           <View style={styles.upgradeIconBox}>
-            <Svg width={20} height={20} viewBox="0 0 24 24" fill="none" stroke="#dc2626" strokeWidth={2}>
+            <Svg width={20} height={20} viewBox="0 0 24 24" fill="none" stroke="#EA580C" strokeWidth={2}>
               <Path strokeLinecap="round" strokeLinejoin="round" d="M8.288 15.038a5.25 5.25 0 017.424 0M5.106 11.856c3.807-3.808 9.98-3.808 13.788 0M1.924 8.674c5.565-5.565 14.587-5.565 20.152 0M12.53 18.22l-.53.53-.53-.53a.75.75 0 011.06 0z" />
             </Svg>
           </View>
@@ -255,7 +255,7 @@ export const SystemPassportScreen: React.FC<SystemPassportScreenProps> = ({
               Compatible with Sungrow, Deye, Growatt, Felicity & Victron. Get real-time solar, load & battery telemetry.
             </Text>
           </View>
-          <Svg width={16} height={16} viewBox="0 0 24 24" fill="none" stroke="#dc2626" strokeWidth={2.2}>
+          <Svg width={16} height={16} viewBox="0 0 24 24" fill="none" stroke="#EA580C" strokeWidth={2.2}>
             <Path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
           </Svg>
         </TouchableOpacity>
@@ -269,7 +269,7 @@ export const SystemPassportScreen: React.FC<SystemPassportScreenProps> = ({
           style={styles.tabItem}
           onPress={() => handleTabPress('home')}
         >
-          <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" stroke={activeTab === 'home' ? '#dc2626' : '#64748b'} strokeWidth={activeTab === 'home' ? 2 : 1.8} strokeLinecap="round" strokeLinejoin="round">
+          <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" stroke={activeTab === 'home' ? '#EA580C' : '#64748b'} strokeWidth={activeTab === 'home' ? 2 : 1.8} strokeLinecap="round" strokeLinejoin="round">
             <Path d="M2.25 12l8.954-8.955a1.126 1.126 0 011.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
           </Svg>
           <Text style={[styles.tabLabel, activeTab === 'home' && styles.tabLabelActive]}>Home</Text>
@@ -281,7 +281,7 @@ export const SystemPassportScreen: React.FC<SystemPassportScreenProps> = ({
           style={styles.tabItem}
           onPress={() => handleTabPress('project')}
         >
-          <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" stroke={activeTab === 'project' ? '#dc2626' : '#64748b'} strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
+          <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" stroke={activeTab === 'project' ? '#EA580C' : '#64748b'} strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
             <Path d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5M9 11.25v1.5M12 9v3.75m3-6v6" />
           </Svg>
           <Text style={[styles.tabLabel, activeTab === 'project' && styles.tabLabelActive]}>Project</Text>
@@ -293,7 +293,7 @@ export const SystemPassportScreen: React.FC<SystemPassportScreenProps> = ({
           style={styles.tabItem}
           onPress={() => handleTabPress('support')}
         >
-          <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" stroke={activeTab === 'support' ? '#dc2626' : '#64748b'} strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
+          <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" stroke={activeTab === 'support' ? '#EA580C' : '#64748b'} strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
             <Path d="M16.712 4.33a9.027 9.027 0 011.652 1.306c.51.51.944 1.064 1.306 1.652M16.712 4.33l-3.448 4.138m3.448-4.138a9.014 9.014 0 00-9.424 0M19.67 7.288l-4.138 3.448m4.138-3.448a9.014 9.014 0 010 9.424m-4.138-5.976a3.736 3.736 0 00-.88-1.388 3.737 3.737 0 00-1.388-.88m2.268 2.268a3.765 3.765 0 010 2.528m-2.268-4.796a3.765 3.765 0 00-2.528 0m4.796 4.796c-.181.506-.475.982-.88 1.388a3.736 3.736 0 01-1.388.88m2.268-2.268l4.138 3.448m0 0a9.027 9.027 0 01-1.306 1.652c-.51.51-1.064.944-1.652 1.306m0 0l-3.448-4.138m3.448 4.138a9.014 9.014 0 01-9.424 0m5.976-4.138a3.765 3.765 0 01-2.528 0m0 0a3.736 3.736 0 01-1.388-.88 3.737 3.737 0 01-.88-1.388m2.268 2.268L7.288 19.67m0 0a9.024 9.024 0 01-1.652-1.306 9.027 9.027 0 01-1.306-1.652m0 0l4.138-3.448M4.33 16.712a9.014 9.014 0 010-9.424m4.138 5.976a3.765 3.765 0 010-2.528m0 0c.181-.506.475-.982.88-1.388a3.736 3.736 0 011.388-.88m-2.268 2.268L4.33 7.288m6.406 1.18L7.288 4.33m0 0a9.024 9.024 0 00-1.652 1.306A9.025 9.025 0 004.33 7.288" />
           </Svg>
           <Text style={[styles.tabLabel, activeTab === 'support' && styles.tabLabelActive]}>Support</Text>
@@ -305,7 +305,7 @@ export const SystemPassportScreen: React.FC<SystemPassportScreenProps> = ({
           style={styles.tabItem}
           onPress={() => handleTabPress('documents')}
         >
-          <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" stroke={activeTab === 'documents' ? '#dc2626' : '#64748b'} strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
+          <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" stroke={activeTab === 'documents' ? '#EA580C' : '#64748b'} strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
             <Path d="M2.25 12.75V12A2.25 2.25 0 014.5 9.75h15A2.25 2.25 0 0121.75 12v.75m-8.69-6.44l-2.12-2.12a1.5 1.5 0 00-1.061-.44H4.5A2.25 2.25 0 002.25 6v12a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9a2.25 2.25 0 00-2.25-2.25h-5.379a1.5 1.5 0 01-1.06-.44z" />
           </Svg>
           <Text style={[styles.tabLabel, activeTab === 'documents' && styles.tabLabelActive]}>Documents</Text>
@@ -317,7 +317,7 @@ export const SystemPassportScreen: React.FC<SystemPassportScreenProps> = ({
           style={styles.tabItem}
           onPress={() => handleTabPress('more')}
         >
-          <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" stroke={activeTab === 'more' ? '#dc2626' : '#64748b'} strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
+          <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" stroke={activeTab === 'more' ? '#EA580C' : '#64748b'} strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
             <Path d="M6.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM12.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM18.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
           </Svg>
           <Text style={[styles.tabLabel, activeTab === 'more' && styles.tabLabelActive]}>More</Text>
@@ -389,7 +389,7 @@ const styles = StyleSheet.create({
     width: 9,
     height: 9,
     borderRadius: 4.5,
-    backgroundColor: '#dc2626',
+    backgroundColor: '#EA580C',
     borderWidth: 2,
     borderColor: '#ffffff',
   },
@@ -536,7 +536,7 @@ const styles = StyleSheet.create({
   progressBarFill: {
     height: '100%',
     borderRadius: 4,
-    backgroundColor: '#dc2626',
+    backgroundColor: '#EA580C',
   },
   cardFooterSub: {
     marginTop: 6,
@@ -603,7 +603,7 @@ const styles = StyleSheet.create({
     width: 40,
     height: 40,
     borderRadius: 12,
-    backgroundColor: '#fef2f2',
+    backgroundColor: '#FFF7ED',
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -642,9 +642,9 @@ const styles = StyleSheet.create({
     marginBottom: 8,
     padding: 14,
     borderRadius: 14,
-    backgroundColor: '#fff1f2',
+    backgroundColor: '#FFF7ED',
     borderWidth: 1,
-    borderColor: '#fecdd3',
+    borderColor: '#FED7AA',
     flexDirection: 'row',
     alignItems: 'center',
     gap: 12,
@@ -653,20 +653,20 @@ const styles = StyleSheet.create({
     width: 38,
     height: 38,
     borderRadius: 10,
-    backgroundColor: '#ffe4e6',
+    backgroundColor: '#FFEDD5',
     alignItems: 'center',
     justifyContent: 'center',
   },
   upgradeTitle: {
     fontSize: 13,
     fontWeight: '700',
-    color: '#9f1239',
+    color: '#9A3412',
   },
   upgradeSubtitle: {
     fontSize: 11,
     fontWeight: '500',
     lineHeight: 15,
-    color: '#be123c',
+    color: '#C2410C',
     marginTop: 2,
   },
 
@@ -697,7 +697,7 @@ const styles = StyleSheet.create({
     color: '#64748b',
   },
   tabLabelActive: {
-    color: '#dc2626',
+    color: '#EA580C',
     fontWeight: '700',
   },
 });

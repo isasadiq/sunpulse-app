@@ -199,7 +199,7 @@ export const EngineerJobsScreen: React.FC<EngineerJobsScreenProps> = ({
           {displayJobs.length === 0 ? (
             <View style={styles.emptyContainer}>
               <View style={styles.emptyIconCircle}>
-                <Svg width={40} height={40} viewBox="0 0 24 24" fill="none" stroke="#dc2626" strokeWidth={1.5} strokeLinecap="round" strokeLinejoin="round">
+                <Svg width={40} height={40} viewBox="0 0 24 24" fill="none" stroke="#EA580C" strokeWidth={1.5} strokeLinecap="round" strokeLinejoin="round">
                   <Path d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </Svg>
               </View>
@@ -291,7 +291,7 @@ export const EngineerJobsScreen: React.FC<EngineerJobsScreenProps> = ({
                       height={14}
                       viewBox="0 0 24 24"
                       fill="none"
-                      stroke={job.notice.type === 'urgent' ? '#b91c1c' : '#475569'}
+                      stroke={job.notice.type === 'urgent' ? '#C2410C' : '#475569'}
                       strokeWidth={2}
                       strokeLinecap="round"
                       strokeLinejoin="round"
@@ -323,7 +323,7 @@ export const EngineerJobsScreen: React.FC<EngineerJobsScreenProps> = ({
             activeOpacity={0.8}
             onPress={() => handleTabPress('jobs')}
           >
-            <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" stroke={activeTab === 'jobs' ? '#dc2626' : '#64748b'} strokeWidth={activeTab === 'jobs' ? 2 : 1.8} strokeLinecap="round" strokeLinejoin="round">
+            <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" stroke={activeTab === 'jobs' ? '#EA580C' : '#64748b'} strokeWidth={activeTab === 'jobs' ? 2 : 1.8} strokeLinecap="round" strokeLinejoin="round">
               <Path d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.673-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 013.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0a48.667 48.667 0 00-7.5 0M12 12.75h.008v.008H12v-.008z" />
             </Svg>
             <Text style={[styles.tabLabel, activeTab === 'jobs' && styles.tabLabelActive]}>Jobs</Text>
@@ -335,7 +335,7 @@ export const EngineerJobsScreen: React.FC<EngineerJobsScreenProps> = ({
             activeOpacity={0.8}
             onPress={() => handleTabPress('tickets')}
           >
-            <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" stroke={activeTab === 'tickets' ? '#dc2626' : '#64748b'} strokeWidth={activeTab === 'tickets' ? 2 : 1.8} strokeLinecap="round" strokeLinejoin="round">
+            <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" stroke={activeTab === 'tickets' ? '#EA580C' : '#64748b'} strokeWidth={activeTab === 'tickets' ? 2 : 1.8} strokeLinecap="round" strokeLinejoin="round">
               <Path d="M16.5 6v.75m0 3v.75m0 3v.75m0 3V18m-9-5.25h5.25M7.5 15h3M3.375 5.25c-.621 0-1.125.504-1.125 1.125v3.026a2.999 2.999 0 010 5.198v3.026c0 .621.504 1.125 1.125 1.125h17.25c.621 0 1.125-.504 1.125-1.125v-3.026a2.999 2.999 0 010-5.198V6.375c0-.621-.504-1.125-1.125-1.125H3.375z" />
             </Svg>
             <Text style={[styles.tabLabel, activeTab === 'tickets' && styles.tabLabelActive]}>Tickets</Text>
@@ -347,7 +347,7 @@ export const EngineerJobsScreen: React.FC<EngineerJobsScreenProps> = ({
             activeOpacity={0.8}
             onPress={() => handleTabPress('visits')}
           >
-            <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" stroke={activeTab === 'visits' ? '#dc2626' : '#64748b'} strokeWidth={activeTab === 'visits' ? 2 : 1.8} strokeLinecap="round" strokeLinejoin="round">
+            <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" stroke={activeTab === 'visits' ? '#EA580C' : '#64748b'} strokeWidth={activeTab === 'visits' ? 2 : 1.8} strokeLinecap="round" strokeLinejoin="round">
               <Path d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z" />
             </Svg>
             <Text style={[styles.tabLabel, activeTab === 'visits' && styles.tabLabelActive]}>Visits</Text>
@@ -359,7 +359,7 @@ export const EngineerJobsScreen: React.FC<EngineerJobsScreenProps> = ({
             activeOpacity={0.8}
             onPress={() => handleTabPress('more')}
           >
-            <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" stroke={activeTab === 'more' ? '#dc2626' : '#64748b'} strokeWidth={activeTab === 'more' ? 2 : 1.8} strokeLinecap="round" strokeLinejoin="round">
+            <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" stroke={activeTab === 'more' ? '#EA580C' : '#64748b'} strokeWidth={activeTab === 'more' ? 2 : 1.8} strokeLinecap="round" strokeLinejoin="round">
               <Path d="M6.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM12.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM18.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
             </Svg>
             <Text style={[styles.tabLabel, activeTab === 'more' && styles.tabLabelActive]}>More</Text>
@@ -419,7 +419,7 @@ const styles = StyleSheet.create({
     width: 9,
     height: 9,
     borderRadius: 5,
-    backgroundColor: '#dc2626',
+    backgroundColor: '#EA580C',
     borderWidth: 2,
     borderColor: '#ffffff',
   },
@@ -509,9 +509,9 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   filterPillActive: {
-    backgroundColor: '#dc2626',
+    backgroundColor: '#EA580C',
     borderWidth: 1,
-    borderColor: '#dc2626',
+    borderColor: '#EA580C',
   },
   filterPillInactive: {
     backgroundColor: '#ffffff',
@@ -568,7 +568,7 @@ const styles = StyleSheet.create({
     borderRadius: 999,
   },
   roleBadgeRed: {
-    backgroundColor: '#fef2f2',
+    backgroundColor: '#FFF7ED',
   },
   roleBadgeGray: {
     backgroundColor: '#f1f5f9',
@@ -578,7 +578,7 @@ const styles = StyleSheet.create({
     fontWeight: '700',
   },
   roleBadgeTextRed: {
-    color: '#b91c1c',
+    color: '#C2410C',
   },
   roleBadgeTextGray: {
     color: '#334155',
@@ -609,7 +609,7 @@ const styles = StyleSheet.create({
   progressBarFill: {
     height: '100%',
     borderRadius: 3,
-    backgroundColor: '#dc2626',
+    backgroundColor: '#EA580C',
   },
   noticeRow: {
     marginTop: 10,
@@ -622,7 +622,7 @@ const styles = StyleSheet.create({
     fontWeight: '600',
   },
   noticeUrgent: {
-    color: '#b91c1c',
+    color: '#C2410C',
   },
   noticeNormal: {
     color: '#475569',
@@ -639,7 +639,7 @@ const styles = StyleSheet.create({
     width: 88,
     height: 88,
     borderRadius: 44,
-    backgroundColor: '#fef2f2',
+    backgroundColor: '#FFF7ED',
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -707,7 +707,7 @@ const styles = StyleSheet.create({
     color: '#64748b',
   },
   tabLabelActive: {
-    color: '#dc2626',
+    color: '#EA580C',
     fontWeight: '700',
   },
 });

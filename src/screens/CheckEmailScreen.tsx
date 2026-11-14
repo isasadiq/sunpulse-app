@@ -143,7 +143,7 @@ export const CheckEmailScreen: React.FC<CheckEmailScreenProps> = ({
                 height={38}
                 viewBox="0 0 24 24"
                 fill="none"
-                stroke="#dc2626"
+                stroke="#EA580C"
                 strokeWidth={1.6}
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -183,7 +183,7 @@ export const CheckEmailScreen: React.FC<CheckEmailScreenProps> = ({
               onPress={handleOpenEmailApp}
             >
               <LinearGradient
-                colors={['#dc2626', '#b91c1c']}
+                colors={['#EA580C', '#C2410C']}
                 start={{ x: 0, y: 0 }}
                 end={{ x: 0, y: 1 }}
                 style={styles.primaryGradient}
@@ -317,7 +317,7 @@ const styles = StyleSheet.create({
     width: 112,
     height: 112,
     borderRadius: 56,
-    backgroundColor: '#fef2f2',
+    backgroundColor: '#FFF7ED',
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -328,7 +328,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#ffffff',
     alignItems: 'center',
     justifyContent: 'center',
-    shadowColor: '#dc2626',
+    shadowColor: '#EA580C',
     shadowOffset: { width: 0, height: 10 },
     shadowOpacity: 0.25,
     shadowRadius: 15,
@@ -341,7 +341,7 @@ const styles = StyleSheet.create({
     width: 32,
     height: 32,
     borderRadius: 16,
-    backgroundColor: '#dc2626',
+    backgroundColor: '#EA580C',
     borderWidth: 3,
     borderColor: '#fafbfd',
     alignItems: 'center',
@@ -384,7 +384,7 @@ const styles = StyleSheet.create({
     width: '100%',
     height: 48,
     borderRadius: 12,
-    shadowColor: '#dc2626',
+    shadowColor: '#EA580C',
     shadowOffset: { width: 0, height: 4 },
     shadowOpacity: 0.35,
     shadowRadius: 10,
@@ -434,7 +434,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   resendLink: {
-    color: '#dc2626',
+    color: '#EA580C',
     fontWeight: '600',
   },
 

@@ -443,7 +443,7 @@ const styles = StyleSheet.create({
   forgotPassword: {
     fontSize: 12,
     fontWeight: '600',
-    color: '#dc2626',
+    color: '#EA580C',
   },
   inputWrapper: {
     position: 'relative',
@@ -460,7 +460,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   inputWrapperFocused: {
-    borderColor: '#dc2626',
+    borderColor: '#EA580C',
   },
   inputLeftIcon: {
     position: 'absolute',
@@ -504,7 +504,7 @@ const styles = StyleSheet.create({
     flex: 1,
     height: 48,
     borderRadius: 12,
-    shadowColor: '#dc2626',
+    shadowColor: '#EA580C',
     shadowOffset: { width: 0, height: 4 },
     shadowOpacity: 0.35,
     shadowRadius: 10,
@@ -623,7 +623,7 @@ const styles = StyleSheet.create({
     width: 24,
     height: 24,
     borderRadius: 6,
-    backgroundColor: '#fef2f2',
+    backgroundColor: '#FFF7ED',
     alignItems: 'center',
     justifyContent: 'center',
   },

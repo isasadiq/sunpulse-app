@@ -228,7 +228,7 @@ export const EngineerTicketDetailScreen: React.FC<EngineerTicketDetailScreenProp
           {/* Diagram Document Card */}
           <View style={styles.docCard}>
             <View style={styles.docIconContainer}>
-              <Svg width={20} height={20} viewBox="0 0 24 24" fill="none" stroke="#dc2626" strokeWidth={1.7}>
+              <Svg width={20} height={20} viewBox="0 0 24 24" fill="none" stroke="#EA580C" strokeWidth={1.7}>
                 <Path
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -272,7 +272,7 @@ export const EngineerTicketDetailScreen: React.FC<EngineerTicketDetailScreenProp
               onPress={handleResolve}
             >
               <LinearGradient
-                colors={['#dc2626', '#b91c1c']}
+                colors={['#EA580C', '#C2410C']}
                 start={{ x: 0, y: 0 }}
                 end={{ x: 0, y: 1 }}
                 style={styles.resolveButtonGradient}
@@ -345,7 +345,7 @@ const styles = StyleSheet.create({
     borderRadius: 999,
   },
   priorityBadgeUrgent: {
-    backgroundColor: '#fef2f2',
+    backgroundColor: '#FFF7ED',
   },
   priorityBadgeNormal: {
     backgroundColor: '#f1f5f9',
@@ -355,7 +355,7 @@ const styles = StyleSheet.create({
     fontWeight: '700',
   },
   priorityBadgeTextUrgent: {
-    color: '#b91c1c',
+    color: '#C2410C',
   },
   priorityBadgeTextNormal: {
     color: '#334155',
@@ -383,7 +383,7 @@ const styles = StyleSheet.create({
     marginTop: 2,
     fontSize: 12,
     fontWeight: '600',
-    color: '#b91c1c',
+    color: '#C2410C',
   },
   stepperContainer: {
     marginTop: 14,
@@ -403,7 +403,7 @@ const styles = StyleSheet.create({
     height: 2,
   },
   stepperLineActive: {
-    backgroundColor: '#dc2626',
+    backgroundColor: '#EA580C',
   },
   stepperLineInactive: {
     backgroundColor: '#cbd5e1',
@@ -412,7 +412,7 @@ const styles = StyleSheet.create({
     width: 20,
     height: 20,
     borderRadius: 10,
-    backgroundColor: '#dc2626',
+    backgroundColor: '#EA580C',
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -484,7 +484,7 @@ const styles = StyleSheet.create({
     width: 40,
     height: 40,
     borderRadius: 12,
-    backgroundColor: '#fef2f2',
+    backgroundColor: '#FFF7ED',
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -544,7 +544,7 @@ const styles = StyleSheet.create({
     height: 48,
     borderRadius: 12,
     overflow: 'hidden',
-    shadowColor: '#dc2626',
+    shadowColor: '#EA580C',
     shadowOffset: { width: 0, height: 4 },
     shadowOpacity: 0.35,
     shadowRadius: 10,

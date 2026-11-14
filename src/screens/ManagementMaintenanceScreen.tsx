@@ -171,7 +171,7 @@ export const ManagementMaintenanceScreen: React.FC<ManagementMaintenanceScreenPr
               onPress={handleSelectTechnician}
             >
               <View style={styles.techLeft}>
-                <Svg width={18} height={18} viewBox="0 0 24 24" fill="none" stroke="#dc2626" strokeWidth={1.9} strokeLinecap="round" strokeLinejoin="round">
+                <Svg width={18} height={18} viewBox="0 0 24 24" fill="none" stroke="#EA580C" strokeWidth={1.9} strokeLinecap="round" strokeLinejoin="round">
                   <Path d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
                 </Svg>
                 <Text style={styles.techName}>{technician}</Text>
@@ -197,7 +197,7 @@ export const ManagementMaintenanceScreen: React.FC<ManagementMaintenanceScreenPr
                   style={[styles.visitRow, isLast && styles.visitRowLast]}
                 >
                   <View style={styles.visitLeft}>
-                    <Svg width={16} height={16} viewBox="0 0 24 24" fill="none" stroke="#dc2626" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
+                    <Svg width={16} height={16} viewBox="0 0 24 24" fill="none" stroke="#EA580C" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
                       <Path d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" />
                     </Svg>
                     <Text style={styles.visitLabel}>{visit.label}</Text>
@@ -223,7 +223,7 @@ export const ManagementMaintenanceScreen: React.FC<ManagementMaintenanceScreenPr
             disabled={isSubmitting}
           >
             <LinearGradient
-              colors={['#dc2626', '#b91c1c']}
+              colors={['#EA580C', '#C2410C']}
               start={{ x: 0, y: 0 }}
               end={{ x: 0, y: 1 }}
               style={styles.primaryGradient}
@@ -330,9 +330,9 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   freqSelected: {
-    backgroundColor: '#dc2626',
+    backgroundColor: '#EA580C',
     borderWidth: 1,
-    borderColor: '#dc2626',
+    borderColor: '#EA580C',
   },
   freqUnselected: {
     backgroundColor: '#ffffff',
@@ -456,7 +456,7 @@ const styles = StyleSheet.create({
     width: '100%',
     borderRadius: 12,
     overflow: 'hidden',
-    shadowColor: '#dc2626',
+    shadowColor: '#EA580C',
     shadowOffset: { width: 0, height: 4 },
     shadowOpacity: 0.35,
     shadowRadius: 20,

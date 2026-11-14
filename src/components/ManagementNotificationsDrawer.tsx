@@ -104,7 +104,7 @@ export const ManagementNotificationsDrawer: React.FC<ManagementNotificationsDraw
       case 'ticket':
         return (
           <View style={[styles.iconBox, styles.redIconBox]}>
-            <Svg width={18} height={18} viewBox="0 0 24 24" fill="none" stroke="#dc2626" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
+            <Svg width={18} height={18} viewBox="0 0 24 24" fill="none" stroke="#EA580C" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
               <Path d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z" />
             </Svg>
           </View>
@@ -112,7 +112,7 @@ export const ManagementNotificationsDrawer: React.FC<ManagementNotificationsDraw
       case 'quote':
         return (
           <View style={[styles.iconBox, styles.redIconBox]}>
-            <Svg width={18} height={18} viewBox="0 0 24 24" fill="none" stroke="#dc2626" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
+            <Svg width={18} height={18} viewBox="0 0 24 24" fill="none" stroke="#EA580C" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
               <Path d="M2.25 13.5h3.86a2.25 2.25 0 012.012 1.244l.256.512a2.25 2.25 0 002.013 1.244h3.218a2.25 2.25 0 002.013-1.244l.256-.512a2.25 2.25 0 012.013-1.244h3.859m-19.5.338V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 00-2.15-1.588H6.911a2.25 2.25 0 00-2.15 1.588L2.35 13.177a2.25 2.25 0 00-.1.661z" />
             </Svg>
           </View>
@@ -302,7 +302,7 @@ const styles = StyleSheet.create({
   markReadText: {
     fontSize: 13,
     fontWeight: '600',
-    color: '#dc2626',
+    color: '#EA580C',
   },
   scrollList: {
     flex: 1,
@@ -331,7 +331,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   redIconBox: {
-    backgroundColor: '#fef2f2',
+    backgroundColor: '#FFF7ED',
   },
   amberIconBox: {
     backgroundColor: '#fffbeb',
@@ -362,7 +362,7 @@ const styles = StyleSheet.create({
     width: 8,
     height: 8,
     borderRadius: 4,
-    backgroundColor: '#dc2626',
+    backgroundColor: '#EA580C',
     marginTop: 4,
   },
   bottomCloseIndicator: {

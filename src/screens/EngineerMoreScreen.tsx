@@ -101,7 +101,7 @@ export const EngineerMoreScreen: React.FC<EngineerMoreScreenProps> = ({
           {/* Profile Card */}
           <View style={styles.profileCard}>
             <LinearGradient
-              colors={['#dc2626', '#b91c1c']}
+              colors={['#EA580C', '#C2410C']}
               start={{ x: 0, y: 0 }}
               end={{ x: 0, y: 1 }}
               style={styles.avatarGradient}
@@ -282,7 +282,7 @@ export const EngineerMoreScreen: React.FC<EngineerMoreScreenProps> = ({
             activeOpacity={0.75}
             onPress={handleSignOutPress}
           >
-            <Svg width={18} height={18} viewBox="0 0 24 24" fill="none" stroke="#b91c1c" strokeWidth={1.9}>
+            <Svg width={18} height={18} viewBox="0 0 24 24" fill="none" stroke="#C2410C" strokeWidth={1.9}>
               <Path
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -306,7 +306,7 @@ export const EngineerMoreScreen: React.FC<EngineerMoreScreenProps> = ({
               height={24}
               viewBox="0 0 24 24"
               fill="none"
-              stroke={activeTab === 'jobs' ? '#dc2626' : '#64748b'}
+              stroke={activeTab === 'jobs' ? '#EA580C' : '#64748b'}
               strokeWidth={activeTab === 'jobs' ? 2 : 1.8}
             >
               <Path
@@ -336,7 +336,7 @@ export const EngineerMoreScreen: React.FC<EngineerMoreScreenProps> = ({
               height={24}
               viewBox="0 0 24 24"
               fill="none"
-              stroke={activeTab === 'tickets' ? '#dc2626' : '#64748b'}
+              stroke={activeTab === 'tickets' ? '#EA580C' : '#64748b'}
               strokeWidth={activeTab === 'tickets' ? 2 : 1.8}
             >
               <Path
@@ -366,7 +366,7 @@ export const EngineerMoreScreen: React.FC<EngineerMoreScreenProps> = ({
               height={24}
               viewBox="0 0 24 24"
               fill="none"
-              stroke={activeTab === 'visits' ? '#dc2626' : '#64748b'}
+              stroke={activeTab === 'visits' ? '#EA580C' : '#64748b'}
               strokeWidth={activeTab === 'visits' ? 2 : 1.8}
             >
               <Path
@@ -396,7 +396,7 @@ export const EngineerMoreScreen: React.FC<EngineerMoreScreenProps> = ({
               height={24}
               viewBox="0 0 24 24"
               fill="none"
-              stroke={activeTab === 'more' ? '#dc2626' : '#64748b'}
+              stroke={activeTab === 'more' ? '#EA580C' : '#64748b'}
               strokeWidth={activeTab === 'more' ? 2 : 1.8}
             >
               <Path
@@ -655,7 +655,7 @@ const styles = StyleSheet.create({
     gap: 8,
   },
   signOutText: {
-    color: '#b91c1c',
+    color: '#C2410C',
     fontSize: 15,
     fontWeight: '700',
   },
@@ -683,7 +683,7 @@ const styles = StyleSheet.create({
     fontSize: 11,
   },
   navLabelActive: {
-    color: '#dc2626',
+    color: '#EA580C',
     fontWeight: '700',
   },
   navLabelInactive: {

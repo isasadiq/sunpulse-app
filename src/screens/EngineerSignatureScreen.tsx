@@ -89,7 +89,7 @@ export const EngineerSignatureScreen: React.FC<EngineerSignatureScreenProps> = (
           {/* Banner Callout: Hand phone to client */}
           <View style={styles.bannerCallout}>
             <View style={styles.bannerIconBox}>
-              <Svg width={20} height={20} viewBox="0 0 24 24" fill="none" stroke="#dc2626" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
+              <Svg width={20} height={20} viewBox="0 0 24 24" fill="none" stroke="#EA580C" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
                 <Path d="M10.05 4.575a1.575 1.575 0 10-3.15 0v3m3.15-3v-1.5a1.575 1.575 0 013.15 0v1.5m-3.15 0l.075 5.925m3.075.75V4.575m0 0a1.575 1.575 0 013.15 0V15M6.9 7.575a1.575 1.575 0 10-3.15 0v8.175a6.75 6.75 0 006.75 6.75h2.018a5.25 5.25 0 003.712-1.538l1.732-1.732a5.25 5.25 0 001.538-3.712l.003-2.024a.668.668 0 01.198-.471 1.575 1.575 0 10-2.228-2.228 3.818 3.818 0 00-1.12 2.687M6.9 7.575V12m6.27 4.318A4.49 4.49 0 0116.35 15" />
               </Svg>
             </View>
@@ -170,7 +170,7 @@ export const EngineerSignatureScreen: React.FC<EngineerSignatureScreenProps> = (
               disabled={isSubmitting}
             >
               <LinearGradient
-                colors={['#dc2626', '#b91c1c']}
+                colors={['#EA580C', '#C2410C']}
                 start={{ x: 0.5, y: 0 }}
                 end={{ x: 0.5, y: 1 }}
                 style={styles.saveButton}
@@ -248,7 +248,7 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: '#fecaca',
     borderRadius: 16,
-    backgroundColor: '#fef2f2',
+    backgroundColor: '#FFF7ED',
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',
@@ -315,7 +315,7 @@ const styles = StyleSheet.create({
   reviewText: {
     fontSize: 13,
     fontWeight: '600',
-    color: '#dc2626',
+    color: '#EA580C',
   },
   inputGroup: {
     marginTop: 14,
@@ -366,9 +366,9 @@ const styles = StyleSheet.create({
     backgroundColor: '#ffffff',
   },
   checkboxChecked: {
-    backgroundColor: '#dc2626',
+    backgroundColor: '#EA580C',
     borderWidth: 2,
-    borderColor: '#dc2626',
+    borderColor: '#EA580C',
   },
   confirmText: {
     flex: 1,
@@ -392,7 +392,7 @@ const styles = StyleSheet.create({
     borderRadius: 12,
     alignItems: 'center',
     justifyContent: 'center',
-    shadowColor: '#dc2626',
+    shadowColor: '#EA580C',
     shadowOffset: { width: 0, height: 4 },
     shadowOpacity: 0.35,
     shadowRadius: 10,

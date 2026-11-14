@@ -106,7 +106,7 @@ export const EngineerInverterTestFailedScreen: React.FC<EngineerInverterTestFail
                 onPress={handleScanBarcode}
                 accessibilityLabel="Scan the serial number label"
               >
-                <Svg width={20} height={20} viewBox="0 0 24 24" fill="none" stroke="#dc2626" strokeWidth={1.9} strokeLinecap="round" strokeLinejoin="round">
+                <Svg width={20} height={20} viewBox="0 0 24 24" fill="none" stroke="#EA580C" strokeWidth={1.9} strokeLinecap="round" strokeLinejoin="round">
                   <Path d="M3.75 4.875c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5A1.125 1.125 0 013.75 9.375v-4.5zM3.75 14.625c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5a1.125 1.125 0 01-1.125-1.125v-4.5zM13.5 4.875c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5A1.125 1.125 0 0113.5 9.375v-4.5z" />
                   <Path d="M6.75 6.75h.75v.75h-.75v-.75zM6.75 16.5h.75v.75h-.75v-.75zM16.5 6.75h.75v.75h-.75v-.75zM13.5 13.5h.75v.75h-.75v-.75zM13.5 19.5h.75v.75h-.75v-.75zM19.5 13.5h.75v.75h-.75v-.75zM19.5 19.5h.75v.75h-.75v-.75zM16.5 16.5h.75v.75h-.75v-.75z" />
                 </Svg>
@@ -203,7 +203,7 @@ export const EngineerInverterTestFailedScreen: React.FC<EngineerInverterTestFail
               onPress={onTestAgain}
             >
               <LinearGradient
-                colors={['#dc2626', '#b91c1c']}
+                colors={['#EA580C', '#C2410C']}
                 start={{ x: 0, y: 0 }}
                 end={{ x: 0, y: 1 }}
                 style={styles.testAgainGradient}
@@ -324,7 +324,7 @@ const styles = StyleSheet.create({
     width: 40,
     height: 40,
     borderRadius: 10,
-    backgroundColor: '#fef2f2',
+    backgroundColor: '#FFF7ED',
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -335,7 +335,7 @@ const styles = StyleSheet.create({
     borderRadius: 16,
     borderWidth: 1,
     borderColor: '#fecaca',
-    backgroundColor: '#fef2f2',
+    backgroundColor: '#FFF7ED',
     flexDirection: 'row',
     alignItems: 'center',
     gap: 12,
@@ -344,7 +344,7 @@ const styles = StyleSheet.create({
     width: 36,
     height: 36,
     borderRadius: 18,
-    backgroundColor: '#dc2626',
+    backgroundColor: '#EA580C',
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -354,12 +354,12 @@ const styles = StyleSheet.create({
   notConnectedTitle: {
     fontSize: 15,
     fontWeight: '700',
-    color: '#991b1b',
+    color: '#9A3412',
   },
   notConnectedSubtitle: {
     fontSize: 12,
     lineHeight: 16,
-    color: '#b91c1c',
+    color: '#C2410C',
     marginTop: 1,
   },
   checklistCard: {
@@ -396,7 +396,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#15803d',
   },
   checkCircleRed: {
-    backgroundColor: '#dc2626',
+    backgroundColor: '#EA580C',
   },
   checkCircleWaiting: {
     borderWidth: 2,
@@ -415,7 +415,7 @@ const styles = StyleSheet.create({
   checkStatusNoResponse: {
     fontSize: 12,
     fontWeight: '700',
-    color: '#b91c1c',
+    color: '#C2410C',
   },
   checkStatusWaiting: {
     fontSize: 12,
@@ -490,7 +490,7 @@ const styles = StyleSheet.create({
     height: 48,
     borderRadius: 12,
     overflow: 'hidden',
-    shadowColor: '#dc2626',
+    shadowColor: '#EA580C',
     shadowOpacity: 0.35,
     shadowRadius: 10,
     shadowOffset: { width: 0, height: 4 },

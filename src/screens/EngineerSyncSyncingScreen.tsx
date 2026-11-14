@@ -62,7 +62,7 @@ export const EngineerSyncSyncingScreen: React.FC<EngineerSyncSyncingScreenProps>
           <View style={styles.syncCard}>
             <View style={styles.syncCardTopRow}>
               <View style={styles.syncIconBox}>
-                <Svg width={20} height={20} viewBox="0 0 24 24" fill="none" stroke="#dc2626" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
+                <Svg width={20} height={20} viewBox="0 0 24 24" fill="none" stroke="#EA580C" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
                   <Path d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99" />
                 </Svg>
               </View>
@@ -76,7 +76,7 @@ export const EngineerSyncSyncingScreen: React.FC<EngineerSyncSyncingScreenProps>
             {/* Progress Bar */}
             <View style={styles.progressTrack}>
               <LinearGradient
-                colors={['#dc2626', '#b91c1c']}
+                colors={['#EA580C', '#C2410C']}
                 start={{ x: 0, y: 0 }}
                 end={{ x: 1, y: 0 }}
                 style={[styles.progressFill, { width: `${progressPercent}%` }]}
@@ -110,7 +110,7 @@ export const EngineerSyncSyncingScreen: React.FC<EngineerSyncSyncingScreenProps>
             {/* Item 2: 3 photos */}
             <View style={[styles.listItem, styles.listItemBorder]}>
               <View style={[styles.itemIconBox, styles.redIconBox]}>
-                <Svg width={18} height={18} viewBox="0 0 24 24" fill="none" stroke="#dc2626" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
+                <Svg width={18} height={18} viewBox="0 0 24 24" fill="none" stroke="#EA580C" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
                   <Path d="M6.827 6.175A2.31 2.31 0 015.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 00-1.134-.175 2.31 2.31 0 01-1.64-1.055l-.822-1.316a2.192 2.192 0 00-1.736-1.039 48.774 48.774 0 00-5.232 0 2.192 2.192 0 00-1.736 1.039l-.821 1.316zM16.5 12.75a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0z" />
                 </Svg>
               </View>
@@ -252,7 +252,7 @@ const styles = StyleSheet.create({
     width: 40,
     height: 40,
     borderRadius: 12,
-    backgroundColor: '#fef2f2',
+    backgroundColor: '#FFF7ED',
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -337,7 +337,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#f0fdf4',
   },
   redIconBox: {
-    backgroundColor: '#fef2f2',
+    backgroundColor: '#FFF7ED',
   },
   amberIconBox: {
     backgroundColor: '#fffbeb',
@@ -363,7 +363,7 @@ const styles = StyleSheet.create({
   itemStatusUploading: {
     fontSize: 12,
     fontWeight: '700',
-    color: '#b91c1c',
+    color: '#C2410C',
   },
   itemStatusWaiting: {
     fontSize: 12,

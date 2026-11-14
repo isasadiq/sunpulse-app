@@ -51,7 +51,7 @@ export const VisitSignedOffScreen: React.FC<VisitSignedOffScreenProps> = ({
             {/* Hero Success Badge */}
             <View style={styles.heroOuterCircle}>
               <LinearGradient
-                colors={['#dc2626', '#b91c1c']}
+                colors={['#EA580C', '#C2410C']}
                 start={{ x: 0.5, y: 0 }}
                 end={{ x: 0.5, y: 1 }}
                 style={styles.heroInnerCircle}
@@ -111,7 +111,7 @@ export const VisitSignedOffScreen: React.FC<VisitSignedOffScreenProps> = ({
                 onPress={onBackToSupport}
               >
                 <LinearGradient
-                  colors={['#dc2626', '#b91c1c']}
+                  colors={['#EA580C', '#C2410C']}
                   start={{ x: 0.5, y: 0 }}
                   end={{ x: 0.5, y: 1 }}
                   style={styles.primaryButton}
@@ -201,7 +201,7 @@ const styles = StyleSheet.create({
     width: 112,
     height: 112,
     borderRadius: 56,
-    backgroundColor: '#fef2f2',
+    backgroundColor: '#FFF7ED',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
@@ -213,7 +213,7 @@ const styles = StyleSheet.create({
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    shadowColor: '#dc2626',
+    shadowColor: '#EA580C',
     shadowOffset: { width: 0, height: 4 },
     shadowOpacity: 0.35,
     shadowRadius: 10,
@@ -301,7 +301,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     gap: 8,
-    shadowColor: '#dc2626',
+    shadowColor: '#EA580C',
     shadowOffset: { width: 0, height: 4 },
     shadowOpacity: 0.35,
     shadowRadius: 10,

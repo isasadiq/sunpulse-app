@@ -152,7 +152,7 @@ export const ManagementDispatchScreen: React.FC<ManagementDispatchScreenProps> =
               </View>
               <View style={styles.slaTrack}>
                 <LinearGradient
-                  colors={['#dc2626', '#b91c1c']}
+                  colors={['#EA580C', '#C2410C']}
                   start={{ x: 0, y: 0 }}
                   end={{ x: 1, y: 0 }}
                   style={[styles.slaFill, { width: `${progressPercent}%` }]}
@@ -223,7 +223,7 @@ export const ManagementDispatchScreen: React.FC<ManagementDispatchScreenProps> =
             disabled={isSubmitting}
           >
             <LinearGradient
-              colors={['#dc2626', '#b91c1c']}
+              colors={['#EA580C', '#C2410C']}
               start={{ x: 0, y: 0 }}
               end={{ x: 0, y: 1 }}
               style={styles.primaryGradient}
@@ -414,8 +414,8 @@ const styles = StyleSheet.create({
   },
   cardSelected: {
     borderWidth: 1.5,
-    borderColor: '#dc2626',
-    backgroundColor: '#fef2f2',
+    borderColor: '#EA580C',
+    backgroundColor: '#FFF7ED',
   },
   cardUnselected: {
     borderWidth: 1,
@@ -432,7 +432,7 @@ const styles = StyleSheet.create({
   },
   radioSelected: {
     borderWidth: 2,
-    borderColor: '#dc2626',
+    borderColor: '#EA580C',
   },
   radioUnselected: {
     borderWidth: 2,
@@ -442,7 +442,7 @@ const styles = StyleSheet.create({
     width: 10,
     height: 10,
     borderRadius: 5,
-    backgroundColor: '#dc2626',
+    backgroundColor: '#EA580C',
   },
   engineerInfoCol: {
     flex: 1,
@@ -501,7 +501,7 @@ const styles = StyleSheet.create({
     width: '100%',
     borderRadius: 12,
     overflow: 'hidden',
-    shadowColor: '#dc2626',
+    shadowColor: '#EA580C',
     shadowOffset: { width: 0, height: 4 },
     shadowOpacity: 0.35,
     shadowRadius: 20,

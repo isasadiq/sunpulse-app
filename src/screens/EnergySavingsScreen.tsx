@@ -161,7 +161,7 @@ export const EnergySavingsScreen: React.FC<EnergySavingsScreenProps> = ({
           {/* Hero Dark Summary Card */}
           <View style={styles.heroCard}>
             <LinearGradient
-              colors={['rgba(220, 38, 38, 0.35)', 'transparent']}
+              colors={['rgba(234, 88, 12, 0.35)', 'transparent']}
               start={{ x: 1, y: 0 }}
               end={{ x: 0.3, y: 0.7 }}
               style={styles.heroGlowOverlay}
@@ -203,7 +203,7 @@ export const EnergySavingsScreen: React.FC<EnergySavingsScreenProps> = ({
                     <View style={styles.barTrack}>
                       {bar.isActive ? (
                         <LinearGradient
-                          colors={['#dc2626', '#b91c1c']}
+                          colors={['#EA580C', '#C2410C']}
                           start={{ x: 0, y: 0 }}
                           end={{ x: 0, y: 1 }}
                           style={[styles.barBar, { height: barHeight }]}
@@ -318,9 +318,9 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   filterPillActive: {
-    backgroundColor: '#dc2626',
+    backgroundColor: '#EA580C',
     borderWidth: 1,
-    borderColor: '#dc2626',
+    borderColor: '#EA580C',
   },
   filterPillInactive: {
     backgroundColor: '#ffffff',

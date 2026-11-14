@@ -270,7 +270,7 @@ export const EngineerNotificationsDrawer: React.FC<EngineerNotificationsDrawerPr
                       ]}
                     >
                       {item.type === 'urgent_ticket' ? (
-                        <Svg width={18} height={18} viewBox="0 0 24 24" fill="none" stroke="#dc2626" strokeWidth={1.8}>
+                        <Svg width={18} height={18} viewBox="0 0 24 24" fill="none" stroke="#EA580C" strokeWidth={1.8}>
                           <Path
                             strokeLinecap="round"
                             strokeLinejoin="round"
@@ -435,7 +435,7 @@ const styles = StyleSheet.create({
   markAllRead: {
     fontSize: 13,
     fontWeight: '600',
-    color: '#dc2626',
+    color: '#EA580C',
   },
   scrollArea: {
     flex: 1,
@@ -474,7 +474,7 @@ const styles = StyleSheet.create({
     flexShrink: 0,
   },
   iconUrgentTicket: {
-    backgroundColor: '#fef2f2',
+    backgroundColor: '#FFF7ED',
   },
   iconDefault: {
     backgroundColor: '#f1f5f9',
@@ -509,7 +509,7 @@ const styles = StyleSheet.create({
     width: 8,
     height: 8,
     borderRadius: 4,
-    backgroundColor: '#dc2626',
+    backgroundColor: '#EA580C',
   },
   footer: {
     marginTop: 'auto',

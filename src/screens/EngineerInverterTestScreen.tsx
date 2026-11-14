@@ -199,7 +199,7 @@ export const EngineerInverterTestScreen: React.FC<EngineerInverterTestScreenProp
                 onPress={handleScanBarcode}
                 accessibilityLabel="Scan the serial number label"
               >
-                <Svg width={20} height={20} viewBox="0 0 24 24" fill="none" stroke="#dc2626" strokeWidth={1.9} strokeLinecap="round" strokeLinejoin="round">
+                <Svg width={20} height={20} viewBox="0 0 24 24" fill="none" stroke="#EA580C" strokeWidth={1.9} strokeLinecap="round" strokeLinejoin="round">
                   <Path d="M3.75 4.875c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5A1.125 1.125 0 013.75 9.375v-4.5zM3.75 14.625c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5a1.125 1.125 0 01-1.125-1.125v-4.5zM13.5 4.875c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5A1.125 1.125 0 0113.5 9.375v-4.5z" />
                   <Path d="M6.75 6.75h.75v.75h-.75v-.75zM6.75 16.5h.75v.75h-.75v-.75zM16.5 6.75h.75v.75h-.75v-.75zM13.5 13.5h.75v.75h-.75v-.75zM13.5 19.5h.75v.75h-.75v-.75zM19.5 13.5h.75v.75h-.75v-.75zM19.5 19.5h.75v.75h-.75v-.75zM16.5 16.5h.75v.75h-.75v-.75z" />
                 </Svg>
@@ -210,7 +210,7 @@ export const EngineerInverterTestScreen: React.FC<EngineerInverterTestScreenProp
           {/* Connection Status Banner */}
           {isTesting ? (
             <View style={styles.testingBanner}>
-              <ActivityIndicator color="#dc2626" />
+              <ActivityIndicator color="#EA580C" />
               <Text style={styles.testingText}>Pinging datalogger modem & cloud server...</Text>
             </View>
           ) : isConnected ? (
@@ -324,7 +324,7 @@ export const EngineerInverterTestScreen: React.FC<EngineerInverterTestScreenProp
             onPress={handleLinkSerial}
           >
             <LinearGradient
-              colors={['#dc2626', '#b91c1c']}
+              colors={['#EA580C', '#C2410C']}
               start={{ x: 0.5, y: 0 }}
               end={{ x: 0.5, y: 1 }}
               style={styles.primaryButton}
@@ -431,8 +431,8 @@ const styles = StyleSheet.create({
     borderColor: '#e2e8f0',
   },
   brandPillActive: {
-    backgroundColor: '#fef2f2',
-    borderColor: '#dc2626',
+    backgroundColor: '#FFF7ED',
+    borderColor: '#EA580C',
   },
   brandPillText: {
     fontSize: 13,
@@ -440,7 +440,7 @@ const styles = StyleSheet.create({
     color: '#475569',
   },
   brandPillTextActive: {
-    color: '#dc2626',
+    color: '#EA580C',
     fontWeight: '700',
   },
   inputWrapper: {
@@ -473,7 +473,7 @@ const styles = StyleSheet.create({
     width: 40,
     height: 40,
     borderRadius: 10,
-    backgroundColor: '#fef2f2',
+    backgroundColor: '#FFF7ED',
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -531,12 +531,12 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: '#fecaca',
     borderRadius: 16,
-    backgroundColor: '#fef2f2',
+    backgroundColor: '#FFF7ED',
   },
   disconnectedText: {
     fontSize: 13,
     fontWeight: '600',
-    color: '#b91c1c',
+    color: '#C2410C',
   },
   checklistCard: {
     marginTop: 14,
@@ -650,7 +650,7 @@ const styles = StyleSheet.create({
     borderRadius: 12,
     alignItems: 'center',
     justifyContent: 'center',
-    shadowColor: '#dc2626',
+    shadowColor: '#EA580C',
     shadowOffset: { width: 0, height: 4 },
     shadowOpacity: 0.35,
     shadowRadius: 10,

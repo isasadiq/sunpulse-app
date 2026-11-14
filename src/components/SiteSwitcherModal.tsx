@@ -106,7 +106,7 @@ export const SiteSwitcherModal: React.FC<SiteSwitcherModalProps> = ({
   }, [visible, fadeAnim, slideAnim]);
 
   const renderIcon = (type: SiteItem['type'], isSelected: boolean) => {
-    const strokeColor = isSelected ? '#dc2626' : '#334155';
+    const strokeColor = isSelected ? '#EA580C' : '#334155';
 
     if (type === 'residence') {
       return (
@@ -344,8 +344,8 @@ const styles = StyleSheet.create({
   },
   siteCardSelected: {
     borderWidth: 1.5,
-    borderColor: '#dc2626',
-    backgroundColor: '#fef2f2',
+    borderColor: '#EA580C',
+    backgroundColor: '#FFF7ED',
   },
   siteIconContainer: {
     width: 44,
@@ -377,7 +377,7 @@ const styles = StyleSheet.create({
     width: 24,
     height: 24,
     borderRadius: 12,
-    backgroundColor: '#dc2626',
+    backgroundColor: '#EA580C',
     alignItems: 'center',
     justifyContent: 'center',
   },

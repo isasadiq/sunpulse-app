@@ -351,8 +351,8 @@ const styles = StyleSheet.create({
   },
   filterPillActive: {
     borderWidth: 1,
-    borderColor: '#dc2626',
-    backgroundColor: '#dc2626',
+    borderColor: '#EA580C',
+    backgroundColor: '#EA580C',
   },
   filterPillInactive: {
     borderWidth: 1,
@@ -477,12 +477,12 @@ const styles = StyleSheet.create({
     paddingVertical: 3,
     paddingHorizontal: 10,
     borderRadius: 999,
-    backgroundColor: '#fef2f2',
+    backgroundColor: '#FFF7ED',
   },
   modalTagText: {
     fontSize: 12,
     fontWeight: '700',
-    color: '#dc2626',
+    color: '#EA580C',
   },
   modalDurationText: {
     fontSize: 12,

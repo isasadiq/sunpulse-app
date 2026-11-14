@@ -281,8 +281,8 @@ const styles = StyleSheet.create({
   },
   filterPillActive: {
     borderWidth: 1,
-    borderColor: '#dc2626',
-    backgroundColor: '#dc2626',
+    borderColor: '#EA580C',
+    backgroundColor: '#EA580C',
   },
   filterPillInactive: {
     borderWidth: 1,

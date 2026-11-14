@@ -370,7 +370,7 @@ export const ManagementLeadsScreen: React.FC<ManagementLeadsScreenProps> = ({
                     onPress={() => handleContact(lead)}
                   >
                     <LinearGradient
-                      colors={['#dc2626', '#b91c1c']}
+                      colors={['#EA580C', '#C2410C']}
                       start={{ x: 0, y: 0 }}
                       end={{ x: 0, y: 1 }}
                       style={styles.contactButtonGradient}
@@ -430,7 +430,7 @@ export const ManagementLeadsScreen: React.FC<ManagementLeadsScreenProps> = ({
             activeOpacity={0.7}
             onPress={() => onSwitchTab?.('leads')}
           >
-            <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="#dc2626" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
+            <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="#EA580C" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
               <Path d="M2.25 13.5h3.86a2.25 2.25 0 012.012 1.244l.256.512a2.25 2.25 0 002.013 1.244h3.218a2.25 2.25 0 002.013-1.244l.256-.512a2.25 2.25 0 012.013-1.244h3.859m-19.5.338V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 00-2.15-1.588H6.911a2.25 2.25 0 00-2.15 1.588L2.35 13.177a2.25 2.25 0 00-.1.661z" />
             </Svg>
             <Text style={styles.navLabelActive}>Leads</Text>
@@ -517,7 +517,7 @@ const styles = StyleSheet.create({
   },
   clearSearchText: {
     fontSize: 13,
-    color: '#dc2626',
+    color: '#EA580C',
     fontWeight: '600',
   },
   filterRowWrapper: {
@@ -538,9 +538,9 @@ const styles = StyleSheet.create({
     gap: 6,
   },
   filterPillActive: {
-    backgroundColor: '#dc2626',
+    backgroundColor: '#EA580C',
     borderWidth: 1,
-    borderColor: '#dc2626',
+    borderColor: '#EA580C',
   },
   filterPillInactive: {
     backgroundColor: '#ffffff',
@@ -604,12 +604,12 @@ const styles = StyleSheet.create({
     paddingVertical: 3,
     paddingHorizontal: 10,
     borderRadius: 999,
-    backgroundColor: '#fef2f2',
+    backgroundColor: '#FFF7ED',
   },
   newBadgeText: {
     fontSize: 12,
     fontWeight: '700',
-    color: '#b91c1c',
+    color: '#C2410C',
   },
   contactedBadge: {
     paddingVertical: 3,
@@ -655,7 +655,7 @@ const styles = StyleSheet.create({
   contactButton: {
     borderRadius: 12,
     overflow: 'hidden',
-    shadowColor: '#dc2626',
+    shadowColor: '#EA580C',
     shadowOpacity: 0.25,
     shadowRadius: 8,
     shadowOffset: { width: 0, height: 3 },
@@ -691,7 +691,7 @@ const styles = StyleSheet.create({
   navLabelActive: {
     fontSize: 11,
     fontWeight: '700',
-    color: '#dc2626',
+    color: '#EA580C',
   },
   navLabelInactive: {
     fontSize: 11,

@@ -227,7 +227,7 @@ export const ManagementProjectsScreen: React.FC<ManagementProjectsScreenProps> =
                       const segmentColor = isDone
                         ? '#15803d' // All green when completed handover
                         : isCompletedOrCurrent
-                        ? '#dc2626' // Red filled
+                        ? '#EA580C' // Red filled
                         : '#e2e8f0'; // Gray empty
 
                       return (
@@ -270,7 +270,7 @@ export const ManagementProjectsScreen: React.FC<ManagementProjectsScreenProps> =
             activeOpacity={0.8}
             onPress={() => onSwitchTab?.('projects')}
           >
-            <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="#dc2626" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
+            <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="#EA580C" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
               <Path d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5M9 11.25v1.5M12 9v3.75m3-6v6" />
             </Svg>
             <Text style={[styles.navText, styles.navTextActive]}>Projects</Text>
@@ -387,7 +387,7 @@ const styles = StyleSheet.create({
   },
   clearSearchText: {
     fontSize: 12,
-    color: '#dc2626',
+    color: '#EA580C',
     fontWeight: '600',
   },
 
@@ -409,9 +409,9 @@ const styles = StyleSheet.create({
     gap: 6,
   },
   filterChipActive: {
-    backgroundColor: '#dc2626',
+    backgroundColor: '#EA580C',
     borderWidth: 1,
-    borderColor: '#dc2626',
+    borderColor: '#EA580C',
   },
   filterChipInactive: {
     backgroundColor: '#ffffff',
@@ -551,7 +551,7 @@ const styles = StyleSheet.create({
     color: '#64748b',
   },
   navTextActive: {
-    color: '#dc2626',
+    color: '#EA580C',
     fontWeight: '700',
   },
 });

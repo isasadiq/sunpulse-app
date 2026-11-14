@@ -53,7 +53,7 @@ export const EngineerTicketResolvedScreen: React.FC<EngineerTicketResolvedScreen
             {/* Concentric Circle Icon */}
             <View style={styles.outerCircle}>
               <LinearGradient
-                colors={['#dc2626', '#b91c1c']}
+                colors={['#EA580C', '#C2410C']}
                 start={{ x: 0, y: 0 }}
                 end={{ x: 0, y: 1 }}
                 style={styles.innerCircle}
@@ -113,7 +113,7 @@ export const EngineerTicketResolvedScreen: React.FC<EngineerTicketResolvedScreen
                 onPress={onBackToTickets}
               >
                 <LinearGradient
-                  colors={['#dc2626', '#b91c1c']}
+                  colors={['#EA580C', '#C2410C']}
                   start={{ x: 0, y: 0 }}
                   end={{ x: 0, y: 1 }}
                   style={styles.primaryButtonGradient}
@@ -186,7 +186,7 @@ const styles = StyleSheet.create({
     width: 112,
     height: 112,
     borderRadius: 56,
-    backgroundColor: '#fef2f2',
+    backgroundColor: '#FFF7ED',
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -196,7 +196,7 @@ const styles = StyleSheet.create({
     borderRadius: 40,
     alignItems: 'center',
     justifyContent: 'center',
-    shadowColor: '#dc2626',
+    shadowColor: '#EA580C',
     shadowOffset: { width: 0, height: 4 },
     shadowOpacity: 0.35,
     shadowRadius: 10,
@@ -275,7 +275,7 @@ const styles = StyleSheet.create({
     height: 48,
     borderRadius: 12,
     overflow: 'hidden',
-    shadowColor: '#dc2626',
+    shadowColor: '#EA580C',
     shadowOffset: { width: 0, height: 4 },
     shadowOpacity: 0.35,
     shadowRadius: 10,

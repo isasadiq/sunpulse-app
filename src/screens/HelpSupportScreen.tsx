@@ -153,7 +153,7 @@ export const HelpSupportScreen: React.FC<HelpSupportScreenProps> = ({
 
           {/* Hero Banner: 24/7 Support Desk */}
           <LinearGradient
-            colors={['#dc2626', '#b91c1c']}
+            colors={['#EA580C', '#C2410C']}
             start={{ x: 0.5, y: 0 }}
             end={{ x: 0.5, y: 1 }}
             style={styles.heroBanner}
@@ -185,7 +185,7 @@ export const HelpSupportScreen: React.FC<HelpSupportScreenProps> = ({
                 <Svg width={18} height={18} viewBox="0 0 24 24" fill="none">
                   <Path
                     d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
-                    stroke="#dc2626"
+                    stroke="#EA580C"
                     strokeWidth={1.8}
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -217,7 +217,7 @@ export const HelpSupportScreen: React.FC<HelpSupportScreenProps> = ({
                 <Svg width={18} height={18} viewBox="0 0 24 24" fill="none">
                   <Path
                     d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155"
-                    stroke="#dc2626"
+                    stroke="#EA580C"
                     strokeWidth={1.8}
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -249,7 +249,7 @@ export const HelpSupportScreen: React.FC<HelpSupportScreenProps> = ({
                 <Svg width={18} height={18} viewBox="0 0 24 24" fill="none">
                   <Path
                     d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0l-7.74 5.372a2.25 2.25 0 01-2.52 0L2.25 6.75"
-                    stroke="#dc2626"
+                    stroke="#EA580C"
                     strokeWidth={1.8}
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -377,7 +377,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 18,
     paddingVertical: 16,
     borderRadius: 20,
-    shadowColor: '#dc2626',
+    shadowColor: '#EA580C',
     shadowOffset: { width: 0, height: 4 },
     shadowOpacity: 0.35,
     shadowRadius: 10,
@@ -388,7 +388,7 @@ const styles = StyleSheet.create({
     fontWeight: '700',
     letterSpacing: 1.32,
     textTransform: 'uppercase',
-    color: '#fee2e2',
+    color: '#FFEDD5',
   },
   heroTitle: {
     marginTop: 4,
@@ -403,7 +403,7 @@ const styles = StyleSheet.create({
     marginTop: 4,
     fontSize: 13,
     lineHeight: 19.5,
-    color: '#fee2e2',
+    color: '#FFEDD5',
   },
   reportFaultButton: {
     marginTop: 12,
@@ -418,7 +418,7 @@ const styles = StyleSheet.create({
   reportFaultButtonText: {
     fontSize: 14,
     fontWeight: '700',
-    color: '#b91c1c',
+    color: '#C2410C',
   },
   sectionHeader: {
     marginTop: 18,
@@ -457,7 +457,7 @@ const styles = StyleSheet.create({
     width: 36,
     height: 36,
     borderRadius: 10,
-    backgroundColor: '#fef2f2',
+    backgroundColor: '#FFF7ED',
     alignItems: 'center',
     justifyContent: 'center',
   },

@@ -101,7 +101,7 @@ export const SetNewPasswordScreen: React.FC<SetNewPasswordScreenProps> = ({
                   height={28}
                   viewBox="0 0 24 24"
                   fill="none"
-                  stroke="#dc2626"
+                  stroke="#EA580C"
                   strokeWidth={1.75}
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -304,7 +304,7 @@ export const SetNewPasswordScreen: React.FC<SetNewPasswordScreenProps> = ({
                 onPress={handleUpdatePassword}
               >
                 <LinearGradient
-                  colors={['#dc2626', '#b91c1c']}
+                  colors={['#EA580C', '#C2410C']}
                   start={{ x: 0, y: 0 }}
                   end={{ x: 0, y: 1 }}
                   style={styles.submitGradient}
@@ -376,7 +376,7 @@ const styles = StyleSheet.create({
     width: 56,
     height: 56,
     borderRadius: 16,
-    backgroundColor: '#fef2f2',
+    backgroundColor: '#FFF7ED',
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -426,7 +426,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   inputWrapperFocused: {
-    borderColor: '#dc2626',
+    borderColor: '#EA580C',
   },
   inputLeftIcon: {
     position: 'absolute',
@@ -485,7 +485,7 @@ const styles = StyleSheet.create({
     width: 18,
     height: 18,
     borderRadius: 9,
-    backgroundColor: '#dc2626',
+    backgroundColor: '#EA580C',
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -510,7 +510,7 @@ const styles = StyleSheet.create({
     width: '100%',
     height: 48,
     borderRadius: 12,
-    shadowColor: '#dc2626',
+    shadowColor: '#EA580C',
     shadowOffset: { width: 0, height: 4 },
     shadowOpacity: 0.35,
     shadowRadius: 10,
@@ -544,7 +544,7 @@ const styles = StyleSheet.create({
     color: '#64748b',
   },
   backLink: {
-    color: '#dc2626',
+    color: '#EA580C',
     fontWeight: '600',
   },
 });

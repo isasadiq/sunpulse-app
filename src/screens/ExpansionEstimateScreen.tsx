@@ -108,7 +108,7 @@ export const ExpansionEstimateScreen: React.FC<ExpansionEstimateScreenProps> = (
             <Svg style={StyleSheet.absoluteFill} pointerEvents="none">
               <Defs>
                 <RadialGradient id="estimateGlow" cx="100%" cy="0%" r="55%">
-                  <Stop offset="0%" stopColor="#dc2626" stopOpacity="0.35" />
+                  <Stop offset="0%" stopColor="#EA580C" stopOpacity="0.35" />
                   <Stop offset="100%" stopColor="#0f172a" stopOpacity="0" />
                 </RadialGradient>
               </Defs>
@@ -214,7 +214,7 @@ export const ExpansionEstimateScreen: React.FC<ExpansionEstimateScreenProps> = (
             disabled={isSubmitting}
           >
             <LinearGradient
-              colors={['#dc2626', '#b91c1c']}
+              colors={['#EA580C', '#C2410C']}
               start={{ x: 0, y: 0 }}
               end={{ x: 0, y: 1 }}
               style={styles.primaryButtonGradient}
@@ -404,7 +404,7 @@ const styles = StyleSheet.create({
   editText: {
     fontSize: 13,
     fontWeight: '600',
-    color: '#dc2626',
+    color: '#EA580C',
   },
   breakdownList: {
     marginTop: 6,
@@ -510,7 +510,7 @@ const styles = StyleSheet.create({
     width: '100%',
     borderRadius: 12,
     overflow: 'hidden',
-    shadowColor: '#dc2626',
+    shadowColor: '#EA580C',
     shadowOffset: { width: 0, height: 4 },
     shadowOpacity: 0.35,
     shadowRadius: 10,

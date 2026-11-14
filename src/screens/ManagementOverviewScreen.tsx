@@ -52,7 +52,7 @@ export const ManagementOverviewScreen: React.FC<ManagementOverviewScreenProps> =
           {/* Fleet Generation Card */}
           <View style={styles.heroCard}>
             <LinearGradient
-              colors={['rgba(220, 38, 38, 0.45)', 'transparent']}
+              colors={['rgba(234, 88, 12, 0.45)', 'transparent']}
               start={{ x: 1, y: 0 }}
               end={{ x: 0.3, y: 0.7 }}
               style={styles.heroGlowOverlay}
@@ -118,7 +118,7 @@ export const ManagementOverviewScreen: React.FC<ManagementOverviewScreenProps> =
                 style={styles.viewAllButton}
               >
                 <Text style={styles.viewAllText}>View all</Text>
-                <Svg width={14} height={14} viewBox="0 0 24 24" fill="none" stroke="#dc2626" strokeWidth={2.2} strokeLinecap="round" strokeLinejoin="round">
+                <Svg width={14} height={14} viewBox="0 0 24 24" fill="none" stroke="#EA580C" strokeWidth={2.2} strokeLinecap="round" strokeLinejoin="round">
                   <Path d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                 </Svg>
               </TouchableOpacity>
@@ -149,7 +149,7 @@ export const ManagementOverviewScreen: React.FC<ManagementOverviewScreenProps> =
               onPress={() => onSelectAlert?.('ticket_not_assigned')}
             >
               <View style={[styles.alertIconBadge, styles.redBadge]}>
-                <Svg width={20} height={20} viewBox="0 0 24 24" fill="none" stroke="#dc2626" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
+                <Svg width={20} height={20} viewBox="0 0 24 24" fill="none" stroke="#EA580C" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
                   <Path d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z" />
                 </Svg>
               </View>
@@ -167,7 +167,7 @@ export const ManagementOverviewScreen: React.FC<ManagementOverviewScreenProps> =
               onPress={() => onSelectAlert?.('battery_low')}
             >
               <View style={[styles.alertIconBadge, styles.redBadge]}>
-                <Svg width={20} height={20} viewBox="0 0 24 24" fill="none" stroke="#dc2626" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
+                <Svg width={20} height={20} viewBox="0 0 24 24" fill="none" stroke="#EA580C" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
                   <Path d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z" />
                 </Svg>
               </View>
@@ -187,7 +187,7 @@ export const ManagementOverviewScreen: React.FC<ManagementOverviewScreenProps> =
             activeOpacity={0.8}
             onPress={() => onSwitchTab?.('overview')}
           >
-            <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="#dc2626" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
+            <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="#EA580C" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
               <Path d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z" />
             </Svg>
             <Text style={[styles.navText, styles.navTextActive]}>Overview</Text>
@@ -302,7 +302,7 @@ const styles = StyleSheet.create({
     width: 9,
     height: 9,
     borderRadius: 5,
-    backgroundColor: '#dc2626',
+    backgroundColor: '#EA580C',
     borderWidth: 2,
     borderColor: '#ffffff',
   },
@@ -495,7 +495,7 @@ const styles = StyleSheet.create({
   viewAllText: {
     fontSize: 13,
     fontWeight: '600',
-    color: '#dc2626',
+    color: '#EA580C',
   },
   alertItem: {
     height: 60,
@@ -520,7 +520,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#fffbeb',
   },
   redBadge: {
-    backgroundColor: '#fef2f2',
+    backgroundColor: '#FFF7ED',
   },
   alertContent: {
     flex: 1,
@@ -570,7 +570,7 @@ const styles = StyleSheet.create({
     color: '#64748b',
   },
   navTextActive: {
-    color: '#dc2626',
+    color: '#EA580C',
     fontWeight: '700',
   },
 });
