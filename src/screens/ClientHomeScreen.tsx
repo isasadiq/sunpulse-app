@@ -173,9 +173,14 @@ export const ClientHomeScreen: React.FC<ClientHomeScreenProps> = ({
                 : 'Connect Inverter Datalogger · Tap to Pair Hardware'}
             </Text>
           </View>
-          <Text style={styles.inverterBarAction}>
-            {connectedInverter ? 'Manage' : 'Connect ⚡'}
-          </Text>
+          <View style={styles.inverterActionWrap}>
+            <Text style={styles.inverterBarAction}>
+              {connectedInverter ? 'Manage' : 'Connect'}
+            </Text>
+            <Svg width={12} height={12} viewBox="0 0 24 24" fill="none" stroke="#C2410C" strokeWidth={2.5} strokeLinecap="round" strokeLinejoin="round">
+              <Path d="M9 18l6-6-6-6" />
+            </Svg>
+          </View>
         </TouchableOpacity>
 
         {/* Hero Card: Solar Generation */}
@@ -462,6 +467,11 @@ const styles = StyleSheet.create({
     fontWeight: '600',
     color: '#9A3412',
     flex: 1,
+  },
+  inverterActionWrap: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 4,
   },
   inverterBarAction: {
     fontSize: 11,

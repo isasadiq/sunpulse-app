@@ -9,6 +9,7 @@ import {
   Image,
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import Svg, { Path } from 'react-native-svg';
 
 const SUNPULSE_LOGO = require('../../assets/sunpulse-logo.png');
 
@@ -153,7 +154,10 @@ export const SplashScreen: React.FC<SplashScreenProps> = ({ onAnimationComplete 
           style={styles.replayButton}
           onPress={runAnimation}
         >
-          <Text style={styles.replayButtonText}>↻ Replay Splash</Text>
+          <Svg width={14} height={14} viewBox="0 0 24 24" fill="none" stroke={BRAND_DARK} strokeWidth={2.2} strokeLinecap="round" strokeLinejoin="round">
+            <Path d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+          </Svg>
+          <Text style={styles.replayButtonText}>Replay Splash</Text>
         </TouchableOpacity>
       </View>
     </SafeAreaView>
@@ -253,8 +257,11 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: '#E2E8F0',
     paddingVertical: 10,
-    paddingHorizontal: 22,
+    paddingHorizontal: 20,
     borderRadius: 999,
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 6,
   },
   replayButtonText: {
     color: BRAND_DARK,

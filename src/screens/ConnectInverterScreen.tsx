@@ -141,7 +141,10 @@ export const ConnectInverterScreen: React.FC<ConnectInverterScreenProps> = ({
               end={{ x: 1, y: 0 }}
               style={styles.demoButtonGradient}
             >
-              <Text style={styles.demoButtonText}>⚡ Instant Demo Connect (1-Tap)</Text>
+              <Svg width={15} height={15} viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" strokeWidth={2.4} strokeLinecap="round" strokeLinejoin="round" style={{ marginRight: 6 }}>
+                <Path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+              </Svg>
+              <Text style={styles.demoButtonText}>Instant Demo Connect (1-Tap)</Text>
             </LinearGradient>
           </TouchableOpacity>
         </View>
@@ -191,8 +194,11 @@ export const ConnectInverterScreen: React.FC<ConnectInverterScreenProps> = ({
         <View style={styles.inputGroup}>
           <View style={styles.labelWithAction}>
             <Text style={styles.inputLabel}>Datalogger Serial Number</Text>
-            <TouchableOpacity onPress={handleSimulateScan} activeOpacity={0.7}>
-              <Text style={styles.scanLinkText}>📷 Scan Barcode</Text>
+            <TouchableOpacity onPress={handleSimulateScan} activeOpacity={0.7} style={styles.scanActionBtn}>
+              <Svg width={14} height={14} viewBox="0 0 24 24" fill="none" stroke="#EA580C" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
+                <Path d="M3 7V5a2 2 0 012-2h2M17 3h2a2 2 0 012 2v2M21 17v2a2 2 0 01-2 2h-2M7 21H5a2 2 0 01-2-2v-2M7 8h10M7 12h10M7 16h10" />
+              </Svg>
+              <Text style={styles.scanLinkText}>Scan Barcode</Text>
             </TouchableOpacity>
           </View>
           <TextInput
@@ -341,6 +347,7 @@ const styles = StyleSheet.create({
   },
   demoButtonGradient: {
     paddingVertical: 11,
+    flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -427,6 +434,11 @@ const styles = StyleSheet.create({
     fontWeight: '600',
     color: '#334155',
     marginBottom: 6,
+  },
+  scanActionBtn: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 4,
   },
   scanLinkText: {
     fontSize: 12,

@@ -1,41 +1,45 @@
-# SunPulse ⚡☀️
+# SunPulse
 **Empowering Rural & Underserved Communities with Intelligent Clean Energy Telemetry and Maintenance**
 
 SunPulse is an offline-first mobile operating platform engineered to solve the "solar graveyard" crisis in Nigeria and sub-Saharan Africa. By uniting solar telemetry, automated fault diagnostics, digital system passports, and offline-capable field engineering workflows into a unified mobile application, SunPulse ensures solar installations in unserved and underserved communities remain operational, productive, and accountable throughout their lifecycle.
 
 ---
 
-## 🌟 The Problem We Solve
+## Problem Statement
 In Nigeria, billions of naira are invested each year into rural solar mini-grids, primary healthcare center (PHC) installations, schools, and off-grid agro-processing facilities. Yet over 40% of these systems fail within 6 to 18 months due to:
 1. **Lack of Post-Installation Telemetry:** Operators have no visibility into battery degradation, inverter tripping, or solar panel shading.
 2. **Connectivity Deserts:** Most remote and underserved locations have zero or spotty cellular connectivity, rendering conventional cloud-only IoT dashboards useless.
 3. **No Technician Accountability:** Field engineers lack standardized diagnostic routines, digital sign-offs, and structured maintenance records.
 
-## 🚀 Key Features
+## Key Capabilities
 
-### 1. Smart Sizing & Accessibility Calculator (Guest Portal)
+### 1. Self-Service Inverter Pairing & Live Telemetry
+- Direct datalogger barcode scanning and serial pairing for major hardware brands (Deye Cloud, Growatt, Felicity Solar, SRNE, Huawei).
+- Real-time power generation, battery state of charge (SoC), and load telemetry.
+- Instant 1-tap evaluation mode for reviewers and technical judges to simulate live telemetry.
+
+### 2. Smart Sizing & Accessibility Calculator
 - Real-time solar and storage sizing calculator tailored for Nigerian households, businesses, and agro-processors.
 - Instant estimates, equipment recommendations, and quote requests with transparent ROI timelines.
 
-### 2. Client & Facility Management Dashboard
-- Real-time power generation, battery state of charge (SoC), and grid/generator fallback monitoring.
+### 3. Client & Facility Management Dashboard
 - **System Passport:** An unforgeable digital identity for each solar installation detailing inverter serials, battery chemistry, panel capacity, and warranty statuses.
 - One-touch fault reporting with photo capture and immediate ticket generation.
 - Full offline dashboard fallback (`ClientHomeOfflineScreen`) when mobile network is unavailable.
 
-### 3. Field Engineer Operating Suite
+### 4. Field Engineer Operating Suite
 - **Offline-First Synchronization Engine:** Complete job scheduling, checklists, and diagnostics queue locally and sync automatically when network connectivity is restored.
 - **Inverter Diagnostics & Datalogger Integration:** Direct barcode scanning for smart dataloggers, live inverter parameter inspection, and automated pass/fail testing.
 - **Digital Proof-of-Work & Sign-Off:** Digital customer signatures, geo-tagged site installation photos, and tamper-resistant maintenance sign-offs.
 
-### 4. Management & Dispatch Center
+### 5. Management & Dispatch Center
 - Fleet-level overview of active installations, energy generation totals, and system health status.
 - Technician dispatch routing and SLA tracking for fault tickets.
 - Client activation workflows and document vaults for contract agreements and warranty certificates.
 
 ---
 
-## 🛠️ Technology Architecture
+## Technology Architecture
 
 - **Framework:** [Expo](https://expo.dev/) (SDK 58) / [React Native](https://reactnative.dev/) (0.88+)
 - **Language:** TypeScript 5.8+
@@ -45,7 +49,7 @@ In Nigeria, billions of naira are invested each year into rural solar mini-grids
 
 ---
 
-## 📱 Getting Started
+## Getting Started
 
 ### Prerequisites
 - Node.js (v18 or later)
@@ -80,7 +84,7 @@ In Nigeria, billions of naira are invested each year into rural solar mini-grids
 
 ---
 
-## 🌍 Alignment with National Development & USPF Mandate
+## Alignment with National Development & USPF Mandate
 SunPulse directly supports the **Universal Service Provision Fund (USPF)** and the **Nigerian Communications Commission (NCC)** mandate to foster ICT innovation in unserved and underserved communities by:
 - Extending clean and affordable energy access to remote rural areas.
 - Drastically reducing downtime in critical community infrastructure (rural clinics, water boreholes, and schools).
@@ -88,5 +92,5 @@ SunPulse directly supports the **Universal Service Provision Fund (USPF)** and t
 
 ---
 
-## 📄 License
+## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
