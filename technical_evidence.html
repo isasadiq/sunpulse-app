@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SunPulse - Technical Design & Prototype Evidence Document</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 18mm 16mm 18mm 16mm;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: #0F172A;
+      background: #FFFFFF;
+      line-height: 1.5;
+      font-size: 10.5pt;
+      margin: 0;
+      padding: 0;
+    }
+    .header {
+      border-bottom: 2px solid #EA580C;
+      padding-bottom: 12px;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+    .brand-title {
+      font-size: 24pt;
+      font-weight: 800;
+      color: #0F172A;
+      letter-spacing: -0.5px;
+      margin: 0;
+    }
+    .brand-title span {
+      color: #EA580C;
+    }
+    .brand-tagline {
+      font-size: 10.5pt;
+      color: #475569;
+      font-weight: 600;
+      margin-top: 2px;
+    }
+    .meta-box {
+      text-align: right;
+      font-size: 8.5pt;
+      color: #64748B;
+      line-height: 1.4;
+    }
+    .badge {
+      display: inline-block;
+      background: #FFF7ED;
+      color: #C2410C;
+      border: 1px solid #FED7AA;
+      font-weight: 700;
+      font-size: 7.5pt;
+      padding: 3px 8px;
+      border-radius: 999px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 4px;
+    }
+    h2 {
+      font-size: 13pt;
+      color: #0F172A;
+      border-bottom: 1px solid #E2E8F0;
+      padding-bottom: 4px;
+      margin-top: 18px;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    h3 {
+      font-size: 11pt;
+      color: #9A3412;
+      margin-top: 12px;
+      margin-bottom: 6px;
+    }
+    p {
+      margin: 0 0 8px 0;
+      color: #334155;
+    }
+    .grid-2 {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 14px;
+    }
+    .col {
+      flex: 1;
+    }
+    .card {
+      background: #F8FAFC;
+      border: 1px solid #E2E8F0;
+      border-radius: 8px;
+      padding: 12px 14px;
+      margin-bottom: 12px;
+    }
+    .card-title {
+      font-weight: 700;
+      font-size: 10.5pt;
+      color: #0F172A;
+      margin-bottom: 4px;
+    }
+    .card p {
+      font-size: 9.5pt;
+      margin: 0;
+      color: #475569;
+    }
+    .phone-preview {
+      width: 190px;
+      border-radius: 12px;
+      border: 2px solid #CBD5E1;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      display: block;
+      margin: 0 auto;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 10px 0;
+      font-size: 9pt;
+    }
+    th, td {
+      border: 1px solid #CBD5E1;
+      padding: 7px 10px;
+      text-align: left;
+    }
+    th {
+      background: #FFF7ED;
+      color: #9A3412;
+      font-weight: 700;
+    }
+    td {
+      background: #FFFFFF;
+      color: #334155;
+    }
+    .page-break {
+      page-break-before: always;
+    }
+    .code-block {
+      background: #0F172A;
+      color: #E2E8F0;
+      padding: 10px 12px;
+      border-radius: 6px;
+      font-family: Consolas, monospace;
+      font-size: 8pt;
+      line-height: 1.4;
+      overflow-x: auto;
+      margin: 8px 0;
+    }
+    .footer-note {
+      margin-top: 16px;
+      padding-top: 8px;
+      border-top: 1px solid #E2E8F0;
+      font-size: 8pt;
+      color: #94A3B8;
+      display: flex;
+      justify-content: space-between;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Page 1: Overview, Problem & Architecture -->
+  <div class="header">
+    <div>
+      <h1 class="brand-title">SUN<span>PULSE</span></h1>
+      <div class="brand-tagline">Intelligent Clean Energy Telemetry & Lifecycle Operating System</div>
+    </div>
+    <div class="meta-box">
+      <div class="badge">USPF Changemaker 2026</div><br>
+      <strong>Sector:</strong> Clean and Affordable Energy<br>
+      <strong>Stage:</strong> Working Prototype<br>
+      <strong>Operation:</strong> Kaduna State, Nigeria<br>
+      <strong>Repo:</strong> github.com/isasadiq/sunpulse-app
+    </div>
+  </div>
+
+  <h2>1. Executive Summary & Problem Fit</h2>
+  <p>
+    Across Nigeria and sub-Saharan Africa, over <strong>40% of rural and peri-urban solar installations fail within 6 to 18 months</strong>. In rural healthcare clinics (PHCs), schools, community water boreholes, and off-grid small businesses, billions of naira invested in clean energy turn into "solar graveyards."
+  </p>
+  <p>
+    The root causes are not destroyed panels, but <strong>lack of post-installation telemetry</strong>, <strong>connectivity blackouts</strong> that disable traditional cloud IoT apps, and an <strong>absence of field technician accountability</strong>. When an inverter trips or a battery cut-off is misconfigured, owners revert to expensive petrol generators.
+  </p>
+  <p>
+    <strong>SunPulse</strong> resolves this with an offline-first mobile telemetry platform that pairs directly with inverters (Deye, Growatt, Felicity, SRNE, Huawei), monitors live solar generation and battery health, operates seamlessly through cellular blackouts, and coordinates verified field technicians with tamper-proof digital sign-offs.
+  </p>
+
+  <h2>2. System Architecture & Technical Specifications</h2>
+  <div class="grid-2">
+    <div class="col">
+      <div class="card">
+        <div class="card-title">Frontend Mobile Client (Working Prototype)</div>
+        <p>Built with <strong>React Native (Expo SDK 58)</strong> and <strong>TypeScript</strong>. Cross-platform support for Android (optimized for entry-level devices Android 8+) and iOS. Features strict type safety with zero compilation or lint errors.</p>
+      </div>
+      <div class="card">
+        <div class="card-title">Offline-First Engine & Local Caching</div>
+        <p>Incorporates an optimistic mutation queue backed by <code>@react-native-async-storage</code>. When connectivity drops, full inspection, diagnostic, and sign-off routines function offline and sync upon reconnecting to 2G/3G/4G.</p>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <div class="card-title">Backend & Cloud Database</div>
+        <p>Powered by <strong>Supabase (PostgreSQL)</strong> with Row Level Security (RLS) policies, Realtime data subscriptions, and structured tables for equipment telemetry, ticket queues, client systems, and maintenance records.</p>
+      </div>
+      <div class="card">
+        <div class="card-title">Hardware Telemetry Layer</div>
+        <p>Communicates with inverter dataloggers via RS485/Modbus RTU protocols and vendor developer APIs (Deye Cloud, ShineWiFi, RS485 dongles). Supports datalogger barcode pairing.</p>
+      </div>
+    </div>
+  </div>
+
+  <h2>3. Technical Schema Summary</h2>
+  <table>
+    <tr>
+      <th style="width: 25%;">Table Name</th>
+      <th style="width: 35%;">Key Fields</th>
+      <th style="width: 40%;">Functional Role</th>
+    </tr>
+    <tr>
+      <td><code>solar_systems</code></td>
+      <td><code>id, user_id, site_name, inverter_model, datalogger_sn, capacity_kva, battery_kwh</code></td>
+      <td>Stores the digital System Passport and equipment metadata for each installation.</td>
+    </tr>
+    <tr>
+      <td><code>telemetry_logs</code></td>
+      <td><code>id, system_id, pv_watts, grid_watts, battery_soc, battery_voltage, created_at</code></td>
+      <td>Stores high-resolution timeseries telemetry for generation and consumption curves.</td>
+    </tr>
+    <tr>
+      <td><code>maintenance_tickets</code></td>
+      <td><code>id, system_id, problem, urgency, status, engineer_id, checklist_completed</code></td>
+      <td>Dispatches service tickets and tracks SLA resolution timelines for field engineers.</td>
+    </tr>
+    <tr>
+      <td><code>engineer_sync_queue</code></td>
+      <td><code>id, engineer_id, sync_type, payload, status, client_timestamp, synced_at</code></td>
+      <td>Maintains local offline-queued visits and signs until network coverage is restored.</td>
+    </tr>
+  </table>
+
+  <!-- Page 2: Visual Evidence, Features & Roadmap -->
+  <div class="page-break"></div>
+
+  <div class="header">
+    <div>
+      <h1 class="brand-title">SUN<span>PULSE</span></h1>
+      <div class="brand-tagline">Visual Prototype Evidence & Field Deployment Roadmap</div>
+    </div>
+    <div class="meta-box">
+      <strong>Technical Dossier</strong><br>
+      Page 2 of 2
+    </div>
+  </div>
+
+  <h2>4. Core Functional Modules & Mobile Interface</h2>
+  <div class="grid-2">
+    <div class="col" style="flex: 1.3;">
+      <div class="card" style="border-left: 4px solid #EA580C;">
+        <div class="card-title">Module 1: Self-Service Inverter Pairing</div>
+        <p>Users pair their physical datalogger serial number via barcode scanner or direct input. Includes an instant <strong>1-Tap Evaluation Mode</strong> that dynamically simulates a live 5kW Deye hybrid installation with battery and PV curves for testing.</p>
+      </div>
+      <div class="card" style="border-left: 4px solid #EA580C;">
+        <div class="card-title">Module 2: Live & Offline Telemetry Engine</div>
+        <p>Continuous monitoring of solar generation (W), battery State of Charge (SoC %), and grid fallback. Displays estimated daily savings in Naira (₦) and switches gracefully to <code>ClientHomeOfflineScreen</code> when connectivity drops.</p>
+      </div>
+      <div class="card" style="border-left: 4px solid #EA580C;">
+        <div class="card-title">Module 3: System Passport & Tamper Prevention</div>
+        <p>Provides an unforgeable digital certificate for every site, locking down inverter serials, battery chemistry, and warranty dates to eliminate rogue parts swapping.</p>
+      </div>
+      <div class="card" style="border-left: 4px solid #EA580C;">
+        <div class="card-title">Module 4: Field Technician Operations</div>
+        <p>Guided diagnostic routines, inverter voltage tests, geo-tagged site photos, and client digital signature sign-offs for transparent field accountability.</p>
+      </div>
+    </div>
+    <div class="col" style="flex: 0.9; text-align: center;">
+      <img src="assets/phone_screenshot.jpg" class="phone-preview" alt="SunPulse Connect Inverter Screen" />
+      <div style="font-size: 8pt; color: #64748B; margin-top: 6px;">
+        <strong>Figure 1:</strong> Live mobile prototype running on device showing self-service hardware pairing & hackathon evaluation mode.
+      </div>
+    </div>
+  </div>
+
+  <h2>5. Kaduna Field Pilot & Deployment Roadmap</h2>
+  <div class="grid-2">
+    <div class="col">
+      <div class="card">
+        <div class="card-title">Phase 1: Kaduna Community Pilot (Months 1–3)</div>
+        <p>Deploy across 15 pilot sites in Kaduna (Primary Healthcare Centres, community water boreholes, and small businesses in Giwa, Kudan, and Barnawa) to stress-test real telemetry across 4G, 2G, and offline modes.</p>
+      </div>
+      <div class="card">
+        <div class="card-title">Phase 2: SMS Critical Alerting Fallback (Months 4–5)</div>
+        <p>Implement an SMS fallback gateway so rural clinic heads receive critical battery shutdown alerts even when mobile data is turned off.</p>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <div class="card-title">Phase 3: Technician Certification Network (Months 6–8)</div>
+        <p>Partner with regional technical colleges and solar associations to verify 30 local solar technicians equipped with SunPulse digital work orders.</p>
+      </div>
+      <div class="card">
+        <div class="card-title">Phase 4: Mini-Grid Fleet Integration (Months 9–12)</div>
+        <p>Open API integrations with Nigerian Rural Electrification Agency (REA) mini-grid operators for fleet-level health monitoring.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-note">
+    <span>SunPulse · Clean Energy ICT Telemetry System</span>
+    <span>GitHub Source Code: <a href="https://github.com/isasadiq/sunpulse-app" style="color:#EA580C;">https://github.com/isasadiq/sunpulse-app</a></span>
+    <span>Kaduna State, Nigeria</span>
+  </div>
+
+</body>
+</html>
