@@ -141,7 +141,7 @@ export const ConnectInverterScreen: React.FC<ConnectInverterScreenProps> = ({
               end={{ x: 1, y: 0 }}
               style={styles.demoButtonGradient}
             >
-              <Svg width={15} height={15} viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" strokeWidth={2.4} strokeLinecap="round" strokeLinejoin="round" style={{ marginRight: 6 }}>
+              <Svg width={15} height={15} viewBox="0 0 24 24" fill="#FFFFFF" stroke="#FFFFFF" strokeWidth={1} strokeLinecap="round" strokeLinejoin="round" style={{ marginRight: 6 }}>
                 <Path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
               </Svg>
               <Text style={styles.demoButtonText}>Instant Demo Connect (1-Tap)</Text>

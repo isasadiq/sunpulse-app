@@ -277,7 +277,7 @@ export const LoginScreen: React.FC<LoginScreenProps> = ({
                     onPress={() => onLoginSuccess?.('demo@sunpulse.ng')}
                   >
                     <View style={styles.demoLoginBox}>
-                      <Svg width={14} height={14} viewBox="0 0 24 24" fill="none" stroke="#B45309" strokeWidth={2.4} strokeLinecap="round" strokeLinejoin="round">
+                      <Svg width={14} height={14} viewBox="0 0 24 24" fill="#B45309" stroke="#B45309" strokeWidth={1} strokeLinecap="round" strokeLinejoin="round">
                         <Path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
                       </Svg>
                       <Text style={styles.demoLoginText}>Launch Live Solar Telemetry (Demo)</Text>
